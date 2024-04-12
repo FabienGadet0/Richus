@@ -1,0 +1,541 @@
+id,name,Nom de l'objet,Serveur,Actualisation,Lot [1],Lot [10],Lot [100],Craft,Gain,item,server,coefficient,dateTime
+44,Épée de Boisaille,Épée de Boisaille,Draconiros,Il y'a 1 heures,2 459,24 498,-,2 433,+ 26,44,2,177,11/01/2024 08:12
+49,Épée de Fouraille,Épée de Fouraille,Draconiros,Il y'a 1 heures,1 400,-,-,437,+ 963,49,2,31,01/04/2024 02:01
+55,Épée d'Alle,Épée d'Alle,Draconiros,Il y'a 1 heures,1 998,-,-,972,+ 1 026,55,2,53,24/03/2024 09:06
+58,La Triste Lame,La Triste Lame,Draconiros,Il y'a 1 heures,5 000,-,-,4 017,+ 983,58,2,65,08/04/2024 05:51
+62,Épée d'Ha,Épée d'Ha,Draconiros,Il y'a 1 heures,3 900,-,-,1 478,+ 2 422,62,2,138,10/04/2024 02:57
+65,Goultard,Goultard,Draconiros,Il y'a 1 heures,2 000,-,-,3 486,-1 486,65,2,56,08/04/2024 06:08
+66,La crinière de Badoul,La crinière de Badoul,Draconiros,Il y'a 1 heures,9 488,-,-,5 950,+ 3 538,66,2,37,08/04/2024 11:14
+67,Le Tranchant Infernal,Le Tranchant Infernal,Draconiros,Il y'a 1 heures,400,-,-,728,-328,67,2,40,10/04/2024 03:09
+70,Amulette du Hibou,Amulette du Hibou,Draconiros,Il y'a 1 heures,798,-,-,369,+ 429,70,2,98,29/02/2024 06:38
+77,Amulette de l'Ours,Amulette de l'Ours,Draconiros,Il y'a 1 heures,88,-,-,1 035,-947,77,2,130,17/04/2023 10:45
+84,Amulette du Mulou,Amulette du Mulou,Draconiros,Il y'a 1 heures,4 300,-,-,597,+ 3 703,84,2,60,25/03/2023 07:42
+91,Arc de Boisaille,Arc de Boisaille,Draconiros,Il y'a 1 heures,150,20 000,-,894,-744,91,2,73,19/03/2024 12:17
+97,Dagues de Boisaille,Dagues de Boisaille,Draconiros,Il y'a 1 heures,668,6 079,-,450,+ 218,97,2,58,20/03/2024 03:14
+103,Anneau de Sagesse,Anneau de Sagesse,Draconiros,Il y'a 1 heures,480,2 600,-,900,-420,103,2,132,21/02/2024 05:03
+112,Anneau de Chance,Anneau de Chance,Draconiros,Il y'a 1 heures,199,-,-,447,-248,112,2,285,07/02/2022 02:53
+121,Anneau d'Agilité,Anneau d'Agilité,Draconiros,Il y'a 1 heures,875,9 764,-,477,+ 398,121,2,50,10/04/2023 12:15
+127,Bottes de Bowisse,Bottes de Bowisse,Draconiros,Il y'a 1 heures,10 799,-,-,4 455,+ 6 344,127,2,17,09/04/2024 01:30
+130,L'Ecrabouilleur de Iop,L'Ecrabouilleur de Iop,Draconiros,Il y'a 1 heures,1 499,-,-,2 220,-721,130,2,64,30/03/2024 01:20
+134,Baguette de Boisaille,Baguette de Boisaille,Draconiros,Il y'a 1 heures,30,40 000,-,411,-381,134,2,42,20/03/2024 03:35
+140,Bâton de Boisaille,Bâton de Boisaille,Draconiros,Il y'a 1 heures,900,9 200,-,399,+ 501,140,2,46,11/04/2024 11:18
+147,Marteau de Boisaille,Marteau de Boisaille,Draconiros,Il y'a 1 heures,1 194,5 000,-,354,+ 840,147,2,33,08/04/2024 05:30
+153,Pelle de Boisaille,Pelle de Boisaille,Draconiros,Il y'a 1 heures,1 672,16 000,-,1 104,+ 568,153,2,219,25/03/2024 12:30
+156,Ceinture de Puissance,Ceinture de Puissance,Draconiros,Il y'a 1 heures,3 999,-,-,2 896,+ 1 103,156,2,76,11/04/2024 07:37
+157,La Gougnole,La Gougnole,Draconiros,Il y'a 1 heures,500,-,-,810,-310,157,2,54,08/03/2024 01:18
+158,La Destinée Dorée,La Destinée Dorée,Draconiros,Il y'a 1 heures,4 600,-,-,594,+ 4 006,158,2,87,08/04/2024 04:42
+159,La Broche Céleste,La Broche Céleste,Draconiros,Il y'a 1 heures,11 995,-,-,9 863,+ 2 132,159,2,40,04/04/2024 04:02
+160,Le Flan des Étoiles,Le Flan des Étoiles,Draconiros,Il y'a 1 heures,23 497,-,-,24 696,-1 199,160,2,55,10/04/2024 05:03
+161,La Célébrité,La Célébrité,Draconiros,Il y'a 1 heures,14 950,-,-,4 934,+ 10 016,161,2,67,08/03/2024 01:23
+165,Baguette de Glace,Baguette de Glace,Draconiros,Il y'a 1 heures,649,898,-,1 107,-458,165,2,94,11/04/2024 12:40
+180,La Baguette des Limbes,La Baguette des Limbes,Draconiros,Il y'a 1 heures,158 999,-,-,197 131,-38 132,180,2,97,06/04/2024 09:20
+181,Baguette des Cieux,Baguette des Cieux,Draconiros,Il y'a 1 heures,17 499,-,-,6 942,+ 10 557,181,2,59,04/04/2024 06:51
+183,Bâton Feuillu,Bâton Feuillu,Draconiros,Il y'a 1 heures,36 999,-,-,12 065,+ 24 934,183,2,565,27/03/2024 03:31
+188,Bâton Kouyu,Bâton Kouyu,Draconiros,Il y'a 1 heures,150,1 999,-,996,-846,188,2,70,18/03/2024 01:23
+194,Bâton Spirituel,Bâton Spirituel,Draconiros,Il y'a 1 heures,900,40 000,-,2 553,-1 653,194,2,122,09/03/2024 01:41
+200,God Rod,God Rod,Draconiros,Il y'a 1 heures,20 000,-,-,26 881,-6 881,200,2,45,08/04/2024 07:30
+201,Hook,Hook,Draconiros,Il y'a 1 heures,7 900,-,-,3 902,+ 3 998,201,2,21,04/04/2024 04:58
+202,Razielle,Razielle,Draconiros,Il y'a 1 heures,9 999,-,-,8 534,+ 1 465,202,2,31,11/04/2024 01:58
+203,Ceinture du Tot,Ceinture du Tot,Draconiros,Il y'a 1 heures,21 000,-,-,8 318,+ 12 682,203,2,159,05/04/2024 03:04
+204,Kryst O'Boul,Kryst O'Boul,Draconiros,Il y'a 1 heures,34 888,-,-,32 231,+ 2 657,204,2,218,11/04/2024 10:41
+208,Dagues de Fouraille,Dagues de Fouraille,Draconiros,Il y'a 1 heures,500,-,-,3 015,-2 515,208,2,83,10/04/2024 02:38
+214,Dagues de Croclage,Dagues de Croclage,Draconiros,Il y'a 1 heures,999,-,-,717,+ 282,214,2,90,25/03/2024 12:50
+218,Bashers,Bashers,Draconiros,Il y'a 1 heures,11 798,-,-,8 249,+ 3 549,218,2,214,10/04/2024 02:58
+219,Blessdags,Blessdags,Draconiros,Il y'a 1 heures,16 500,-,-,19 840,-3 340,219,2,106,23/03/2024 12:47
+220,Chakra Style,Chakra Style,Draconiros,Il y'a 1 heures,24 198,-,-,23 245,+ 953,220,2,33,06/04/2024 01:04
+224,Marteau de Raclage,Marteau de Raclage,Draconiros,Il y'a 1 heures,4 294,-,-,731,+ 3 563,224,2,75,25/03/2024 12:30
+230,Marteau d'Ivoire,Marteau d'Ivoire,Draconiros,Il y'a 1 heures,798,-,-,834,-36,230,2,38,01/04/2024 12:14
+233,Kaiser,Kaiser,Draconiros,Il y'a 1 heures,11 999,-,-,6 938,+ 5 061,233,2,21,28/03/2024 10:26
+234,Ragnarok,Ragnarok,Draconiros,Il y'a 1 heures,24 000,-,-,24 364,-364,234,2,145,28/03/2024 06:41
+235,Cerberus,Cerberus,Draconiros,Il y'a 1 heures,599,-,-,312,+ 287,235,2,32,25/03/2024 12:32
+236,Barabas,Barabas,Draconiros,Il y'a 1 heures,3 800,-,-,3 984,-184,236,2,60,14/02/2024 12:03
+237,Sargasse,Sargasse,Draconiros,Il y'a 1 heures,10 998,-,-,9 243,+ 1 755,237,2,409,11/04/2024 12:54
+241,Pelle de Crapouille,Pelle de Crapouille,Draconiros,Il y'a 1 heures,999,-,-,1 572,-573,241,2,268,25/03/2024 12:51
+247,Pelle de Rapage,Pelle de Rapage,Draconiros,Il y'a 1 heures,3 500,-,-,1 577,+ 1 923,247,2,119,24/03/2024 05:36
+250,Ares,Ares,Draconiros,Il y'a 1 heures,39 987,-,-,26 567,+ 13 420,250,2,35,22/03/2024 10:14
+251,Barbe Grise,Barbe Grise,Draconiros,Il y'a 1 heures,1 490,-,-,1 318,+ 172,251,2,39,10/04/2024 12:31
+255,Ceinture Vitalesque,Ceinture Vitalesque,Draconiros,Il y'a 1 heures,90,-,-,366,-276,255,2,76,04/04/2024 09:47
+259,Ceinture Forcesque,Ceinture Forcesque,Draconiros,Il y'a 1 heures,298,-,-,1 116,-818,259,2,97,19/07/2023 08:47
+263,Ceinture Agilesque,Ceinture Agilesque,Draconiros,Il y'a 1 heures,400,-,-,909,-509,263,2,206,23/03/2024 08:14
+267,Arc Déroutant,Arc Déroutant,Draconiros,Il y'a 1 heures,449,-,-,1 539,-1 090,267,2,75,22/03/2024 07:28
+270,Xaveur,Xaveur,Draconiros,Il y'a 1 heures,17 900,-,-,19 340,-1 440,270,2,52,31/03/2024 07:03
+271,Le Marteau du Chafer,Le Marteau du Chafer,Draconiros,Il y'a 1 heures,6 499,-,-,4 586,+ 1 913,271,2,116,26/03/2024 06:31
+272,Nomoon,Nomoon,Draconiros,Il y'a 1 heures,10 994,-,-,8 186,+ 2 808,272,2,214,02/04/2024 05:26
+272,Nomoon,Nomoon,Draconiros,Il y'a 1 heures,2 890,-,-,-,-,272,2,214,02/04/2024 05:26
+273,La Corde de Yamato,La Corde de Yamato,Draconiros,Il y'a 1 heures,23 000,-,-,20 404,+ 2 596,273,2,223,29/03/2024 11:28
+278,Anneau des Rocheuses,Anneau des Rocheuses,Draconiros,Il y'a 1 heures,498,-,-,287,+ 211,278,2,92,07/04/2024 06:03
+279,La Larme du Bouftou,La Larme du Bouftou,Draconiros,Il y'a 1 heures,79,-,-,375,-296,279,2,86,20/03/2024 01:07
+280,Collier de l'Arc en Ciel,Collier de l'Arc en Ciel,Draconiros,Il y'a 1 heures,400,3 000,-,327,+ 73,280,2,93,03/04/2024 12:06
+296,Pelle du Craqueleur,Pelle du Craqueleur,Draconiros,Il y'a 1 heures,680,-,-,2 136,-1 456,296,2,155,08/04/2024 06:14
+298,Sandales Tofuesques,Sandales Tofuesques,Draconiros,Il y'a 1 heures,20,750,-,321,-301,298,2,48,04/04/2024 03:25
+299,Bottes de Faillete,Bottes de Faillete,Draconiros,Il y'a 1 heures,2 999,25 000,-,1 304,+ 1 695,299,2,32,26/03/2024 04:53
+320,Bâton du Tabi,Bâton du Tabi,Draconiros,Il y'a 1 heures,12 999,-,-,4 630,+ 8 369,320,2,85,08/04/2024 10:05
+323,Amulette du Kam Assutra,Amulette du Kam Assutra,Draconiros,Il y'a 1 heures,16 664,-,-,14 302,+ 2 362,323,2,59,25/03/2024 02:34
+324,Amulette de Krokette,Amulette de Krokette,Draconiros,Il y'a 1 heures,1 500,-,-,933,+ 567,324,2,86,06/04/2024 02:37
+325,Amulette du Sram,Amulette du Sram,Draconiros,Il y'a 1 heures,450,-,-,438,+ 12,325,2,99,06/04/2024 02:39
+326,Amulette Deulegarnoulle,Amulette Deulegarnoulle,Draconiros,Il y'a 1 heures,8 990,-,-,19 217,-10 227,326,2,60,20/01/2024 07:09
+327,Lame du Gob-Trotteur,Lame du Gob-Trotteur,Draconiros,Il y'a 1 heures,390,-,-,988,-598,327,2,109,08/04/2024 09:42
+328,Koupe-koupe,Koupe-koupe,Draconiros,Il y'a 1 heures,395,4 000,-,393,+ 2,328,2,27,08/04/2024 05:43
+329,Arc de Triomphe,Arc de Triomphe,Draconiros,Il y'a 1 heures,10 000,-,-,6 500,+ 3 500,329,2,153,18/03/2024 05:47
+331,Arc Hancihaile,Arc Hancihaile,Draconiros,Il y'a 1 heures,8 500,-,-,7 867,+ 633,331,2,556,06/04/2024 10:21
+332,Arc de Jeanne,Arc de Jeanne,Draconiros,Il y'a 1 heures,9 200,-,-,5 823,+ 3 377,332,2,58,22/03/2024 06:48
+333,Baguette Deuh-Pain,Baguette Deuh-Pain,Draconiros,Il y'a 1 heures,14 299,-,-,14 761,-462,333,2,114,17/03/2024 10:01
+334,Baguette de Liriel,Baguette de Liriel,Draconiros,Il y'a 1 heures,11 986,-,-,8 774,+ 3 212,334,2,123,16/03/2024 09:49
+335,Bâton du Bwork Mage,Bâton du Bwork Mage,Draconiros,Il y'a 1 heures,8 999,-,-,8 091,+ 908,335,2,49,05/04/2024 05:31
+336,Bâton du Grand Pa Wabbit,Bâton du Grand Pa Wabbit,Draconiros,Il y'a 1 heures,28 780,-,-,16 195,+ 12 585,336,2,256,31/03/2024 07:19
+337,Arc du Bwork Archer,Arc du Bwork Archer,Draconiros,Il y'a 1 heures,650,7 970,-,1 800,-1 150,337,2,41,06/04/2024 10:25
+339,Lame du Chafer,Lame du Chafer,Draconiros,Il y'a 1 heures,600,-,-,1 546,-946,339,2,41,10/04/2024 02:18
+340,Leurnettes,Leurnettes,Draconiros,Il y'a 1 heures,5,-,-,408,-403,340,2,68,25/03/2024 12:29
+341,Dagues Eurfolles,Dagues Eurfolles,Draconiros,Il y'a 1 heures,15 998,180 000,-,14 983,+ 1 015,341,2,63,08/04/2024 09:53
+342,Marteau Pickeur,Marteau Pickeur,Draconiros,Il y'a 1 heures,3 990,-,-,5 068,-1 078,342,2,161,12/03/2024 11:08
+346,Anneau Rak,Anneau Rak,Draconiros,Il y'a 1 heures,2 499,-,-,704,+ 1 795,346,2,54,23/03/2024 11:40
+347,Rhizome Doré,Rhizome Doré,Draconiros,Il y'a 1 heures,4 000,-,-,6 624,-2 624,347,2,97,10/04/2024 02:38
+348,Bottes de Céleri-Thé,Bottes de Céleri-Thé,Draconiros,Il y'a 1 heures,8 500,-,-,5 865,+ 2 635,348,2,18,11/04/2024 03:48
+354,La Klebik,La Klebik,Draconiros,Il y'a 1 heures,2 998,-,-,2 917,+ 81,354,2,71,03/04/2024 11:36
+355,L'Anneau de Valeur,L'Anneau de Valeur,Draconiros,Il y'a 1 heures,2 750,-,-,1 227,+ 1 523,355,2,86,07/04/2024 07:43
+356,Ceinture d'Endurance,Ceinture d'Endurance,Draconiros,Il y'a 1 heures,1 170,-,-,974,+ 196,356,2,37,04/04/2024 08:46
+357,La Queue,La Queue,Draconiros,Il y'a 1 heures,20,499,-,246,-226,357,2,12,08/04/2024 05:44
+358,La Queue Infernale,La Queue Infernale,Draconiros,Il y'a 1 heures,7 100,-,-,5 240,+ 1 860,358,2,287,25/03/2024 12:52
+359,L'Ecaliseur,L'Ecaliseur,Draconiros,Il y'a 1 heures,22 000,-,-,17 668,+ 4 332,359,2,265,03/03/2024 03:33
+436,Bâton en Racine d'Abraknyde,Bâton en Racine d'Abraknyde,Draconiros,Il y'a 1 heures,2 994,-,-,1 525,+ 1 469,436,2,22,22/03/2024 07:50
+458,Amulette du Chafer,Amulette du Chafer,Draconiros,Il y'a 1 heures,2 000,-,-,4 129,-2 129,458,2,230,14/03/2024 11:58
+462,Arc en Racine d'Abraknyde,Arc en Racine d'Abraknyde,Draconiros,Il y'a 1 heures,13 000,-,-,16 098,-3 098,462,2,46,31/03/2024 08:58
+469,Baguette en Racine d'Abraknyde,Baguette en Racine d'Abraknyde,Draconiros,Il y'a 1 heures,16 000,-,-,9 587,+ 6 413,469,2,192,02/04/2024 08:20
+478,Élagueuse de Charme,Élagueuse de Charme,Draconiros,Il y'a 1 heures,7 899,-,-,4 896,+ 3 003,478,2,61,01/04/2024 03:37
+484,Pelle Teuze,Pelle Teuze,Draconiros,Il y'a 1 heures,20 188,250 000,-,18 795,+ 1 393,484,2,349,15/03/2024 10:39
+489,Loupe,Loupe,Draconiros,Il y'a 1 heures,450 000,-,-,-,-,489,2,100,21/04/2023 04:09
+502,Trancheuse d'If,Trancheuse d'If,Draconiros,Il y'a 1 heures,9 999,-,-,1 920,+ 8 079,502,2,239,25/03/2024 09:09
+515,Boulgourde des Clairières,Boulgourde des Clairières,Draconiros,Il y'a 1 heures,43 886,-,-,28 876,+ 15 010,515,2,153,02/04/2024 02:35
+592,Corde d'Ivan Nowé,Corde d'Ivan Nowé,Draconiros,Il y'a 1 heures,6 555,-,-,5 248,+ 1 307,592,2,138,09/04/2024 04:40
+610,Amulette en Crabe,Amulette en Crabe,Draconiros,Il y'a 1 heures,4 000,-,-,3 918,+ 82,610,2,76,28/03/2024 02:15
+616,Amulette du Marin,Amulette du Marin,Draconiros,Il y'a 1 heures,3 998,-,-,4 716,-718,616,2,278,07/04/2024 02:18
+617,Amulette du Pirate,Amulette du Pirate,Draconiros,Il y'a 1 heures,16 000,-,-,13 320,+ 2 680,617,2,123,16/03/2024 10:08
+619,Bâton du Maître des Bouftous,Bâton du Maître des Bouftous,Draconiros,Il y'a 1 heures,34 999,-,-,34 577,+ 422,619,2,70,11/04/2024 05:40
+620,Découpeuse de Kralamoure,Découpeuse de Kralamoure,Draconiros,Il y'a 1 heures,34 997,-,-,21 630,+ 13 367,620,2,128,10/04/2024 02:13
+629,Chapeau Pointu,Chapeau Pointu,Draconiros,Il y'a 1 heures,299,-,-,437,-138,629,2,28,01/04/2024 04:24
+638,Amulette du Pêcheur de Somoon,Amulette du Pêcheur de Somoon,Draconiros,Il y'a 1 heures,249,-,-,2 158,-1 909,638,2,15,26/03/2024 09:22
+639,Amulette des Abîmes,Amulette des Abîmes,Draconiros,Il y'a 1 heures,2 798,-,-,4 564,-1 766,639,2,31,07/04/2024 06:21
+640,Arc des Rivages,Arc des Rivages,Draconiros,Il y'a 1 heures,24 000,-,-,18 360,+ 5 640,640,2,133,05/04/2024 05:40
+657,Bâton du Maître des Tofus,Bâton du Maître des Tofus,Draconiros,Il y'a 1 heures,21 999,-,-,10 333,+ 11 666,657,2,89,22/03/2024 07:00
+658,Bâton du Maître des Tabis,Bâton du Maître des Tabis,Draconiros,Il y'a 1 heures,4 900,-,-,3 285,+ 1 615,658,2,65,20/03/2024 03:37
+673,Mangeuse de Châtaignier,Mangeuse de Châtaignier,Draconiros,Il y'a 1 heures,537,-,-,144,+ 393,673,2,14,22/03/2024 02:59
+674,Fendeuse de Merisier,Fendeuse de Merisier,Draconiros,Il y'a 1 heures,13 996,-,-,5 621,+ 8 375,674,2,113,10/04/2024 02:58
+675,Trancheuse de Noyer,Trancheuse de Noyer,Draconiros,Il y'a 1 heures,14 997,-,-,2 098,+ 12 899,675,2,247,10/04/2024 03:09
+676,Mangeuse d'Érable,Mangeuse d'Érable,Draconiros,Il y'a 1 heures,12 497,-,-,2 225,+ 10 272,676,2,60,05/04/2024 05:37
+696,La Coiffe du Ploukosse,La Coiffe du Ploukosse,Draconiros,Il y'a 1 heures,999,-,-,1 905,-906,696,2,72,03/04/2024 02:50
+698,Choipo Podlard,Choipo Podlard,Draconiros,Il y'a 1 heures,13 985,-,-,7 031,+ 6 954,698,2,64,01/04/2024 11:18
+699,Le Troma,Le Troma,Draconiros,Il y'a 1 heures,19 400,-,-,10 598,+ 8 802,699,2,866,09/04/2024 07:29
+701,Le Oiram,Le Oiram,Draconiros,Il y'a 1 heures,5 000,-,-,6 092,-1 092,701,2,349,18/02/2024 04:05
+702,Kritter,Kritter,Draconiros,Il y'a 1 heures,1 277,-,-,2 205,-928,702,2,26,03/04/2024 02:53
+703,Dora,Dora,Draconiros,Il y'a 1 heures,500,-,-,665,-165,703,2,52,05/05/2023 07:07
+704,Dantgoule,Dantgoule,Draconiros,Il y'a 1 heures,1 997,-,-,2 142,-145,704,2,66,01/04/2024 09:40
+705,Masque Tromatisant,Masque Tromatisant,Draconiros,Il y'a 1 heures,6 500,-,-,8 535,-2 035,705,2,89,01/04/2024 02:12
+706,Crystal O'Boul,Crystal O'Boul,Draconiros,Il y'a 1 heures,54 000,-,-,52 450,+ 1 550,706,2,1351,01/04/2024 12:33
+707,Minotokorno,Minotokorno,Draconiros,Il y'a 1 heures,18 759,-,-,10 251,+ 8 508,707,2,189,30/03/2024 11:28
+708,Houde,Houde,Draconiros,Il y'a 1 heures,4 999,-,-,6 189,-1 190,708,2,197,01/04/2024 11:16
+709,Lorko Kasko,Lorko Kasko,Draconiros,Il y'a 1 heures,1 200,-,-,742,+ 458,709,2,17,02/04/2024 06:49
+710,Korko Klako,Korko Klako,Draconiros,Il y'a 1 heures,3 000,-,-,4 424,-1 424,710,2,292,05/04/2024 11:48
+711,Jouik Krampe,Jouik Krampe,Draconiros,Il y'a 1 heures,1 699,-,-,2 436,-737,711,2,45,09/04/2024 01:58
+712,Gulliver,Gulliver,Draconiros,Il y'a 1 heures,4 090,-,-,1 619,+ 2 471,712,2,46,06/04/2024 12:25
+732,Alliance de Silimelle,Alliance de Silimelle,Draconiros,Il y'a 1 heures,10 000,-,-,9 414,+ 586,732,2,186,06/04/2024 05:58
+733,Bottes de Ragalde,Bottes de Ragalde,Draconiros,Il y'a 1 heures,15 995,-,-,16 781,-786,733,2,272,05/04/2024 04:17
+734,Ceinture de Sécurité,Ceinture de Sécurité,Draconiros,Il y'a 1 heures,1 995,14 000,-,1 653,+ 342,734,2,81,08/04/2024 08:36
+742,Bâton Cornu,Bâton Cornu,Draconiros,Il y'a 1 heures,16 499,-,-,8 606,+ 7 893,742,2,187,22/03/2024 05:59
+744,Cape de Bowisse,Cape de Bowisse,Draconiros,Il y'a 1 heures,130,-,-,474,-344,744,2,8,20/03/2024 12:51
+754,Cape du Vampire,Cape du Vampire,Draconiros,Il y'a 1 heures,849,-,-,364,+ 485,754,2,22,10/04/2024 06:02
+758,Cape du Justicier,Cape du Justicier,Draconiros,Il y'a 1 heures,7 000,-,-,5 132,+ 1 868,758,2,150,06/04/2024 12:26
+759,Cape du Poolay Chogrelotant,Cape du Poolay Chogrelotant,Draconiros,Il y'a 1 heures,2 899,-,-,2 670,+ 229,759,2,43,01/04/2024 09:25
+765,Faux de Farle Ingalsse,Faux de Farle Ingalsse,Draconiros,Il y'a 1 heures,2 490,-,-,-,-,765,2,50,09/02/2021 12:46
+766,Koliet Aclou,Koliet Aclou,Draconiros,Il y'a 1 heures,800,-,-,549,+ 251,766,2,40,12/03/2024 09:42
+767,Gantie Royal,Gantie Royal,Draconiros,Il y'a 1 heures,50,-,-,330,-280,767,2,48,12/03/2023 12:22
+768,Camaïneux,Camaïneux,Draconiros,Il y'a 1 heures,100,-,-,1 017,-917,768,2,159,02/04/2024 09:04
+769,Einekeineux,Einekeineux,Draconiros,Il y'a 1 heures,70,1 000,-,990,-920,769,2,174,04/04/2024 03:21
+771,Mangeuse de Frêne,Mangeuse de Frêne,Draconiros,Il y'a 1 heures,380,-,-,1 500,-1 120,771,2,92,10/03/2024 12:10
+772,Cape Edépée,Cape Edépée,Draconiros,Il y'a 1 heures,650,-,-,5 544,-4 894,772,2,143,02/04/2024 08:13
+773,Cape Ellinie,Cape Ellinie,Draconiros,Il y'a 1 heures,79,-,-,793,-714,773,2,30,29/03/2024 03:39
+774,Cape Ulais,Cape Ulais,Draconiros,Il y'a 1 heures,899,-,-,1 140,-241,774,2,101,29/03/2024 09:17
+775,Cape Abilité,Cape Abilité,Draconiros,Il y'a 1 heures,696,7 110,-,471,+ 225,775,2,14,05/04/2024 11:48
+776,Cape Sulcorpe,Cape Sulcorpe,Draconiros,Il y'a 1 heures,477,-,-,366,+ 111,776,2,49,08/04/2024 01:57
+777,Cape du Coq Hû,Cape du Coq Hû,Draconiros,Il y'a 1 heures,19 000,-,-,14 418,+ 4 582,777,2,70,10/04/2024 01:11
+778,Cape de Mori Arty,Cape de Mori Arty,Draconiros,Il y'a 1 heures,9 998,-,-,-,-,778,2,130,17/04/2023 10:45
+779,Cape Maj'Hic,Cape Maj'Hic,Draconiros,Il y'a 1 heures,2 300,-,-,2 068,+ 232,779,2,57,09/04/2024 07:57
+781,Cape Itou Lascione,Cape Itou Lascione,Draconiros,Il y'a 1 heures,4 500,-,-,4 296,+ 204,781,2,463,01/04/2024 12:18
+782,Agride,Agride,Draconiros,Il y'a 1 heures,2 499,-,-,2 974,-475,782,2,119,25/03/2024 12:53
+783,Amulette du Bûcheron,Amulette du Bûcheron,Draconiros,Il y'a 1 heures,450,-,-,2 672,-2 222,783,2,109,29/03/2024 04:39
+784,Bottes du Chat Buté,Bottes du Chat Buté,Draconiros,Il y'a 1 heures,25,-,-,450,-425,784,2,79,24/03/2024 02:33
+785,Anneau Fortifiant,Anneau Fortifiant,Draconiros,Il y'a 1 heures,381,5 555,99 999,474,-93,785,2,38,25/03/2024 06:36
+786,Pendentif du Hibou Chétif,Pendentif du Hibou Chétif,Draconiros,Il y'a 1 heures,200,-,-,444,-244,786,2,62,08/03/2024 01:09
+787,Anneau Rexik,Anneau Rexik,Draconiros,Il y'a 1 heures,500,-,-,2 859,-2 359,787,2,508,12/03/2024 07:33
+789,Ceinture du Kobeer,Ceinture du Kobeer,Draconiros,Il y'a 1 heures,30 000,-,-,-,-,789,2,4000,15/09/2022 05:06
+790,Cape de Bonne Espérance,Cape de Bonne Espérance,Draconiros,Il y'a 1 heures,9 950,-,-,6 565,+ 3 385,790,2,94,10/04/2024 02:21
+791,Abraknydi Vivitus,Abraknydi Vivitus,Draconiros,Il y'a 1 heures,5 997,-,-,5 307,+ 690,791,2,157,04/02/2024 12:21
+821,Épée Sacrée,Épée Sacrée,Draconiros,Il y'a 1 heures,900,994,-,171,+ 729,821,2,13,15/03/2024 09:14
+827,Lame du Bwork,Lame du Bwork,Draconiros,Il y'a 1 heures,8 499,-,-,5 443,+ 3 056,827,2,142,11/04/2024 11:48
+828,Arc Sifflant,Arc Sifflant,Draconiros,Il y'a 1 heures,400,-,-,501,-101,828,2,39,25/03/2024 09:18
+829,Arc Hade,Arc Hade,Draconiros,Il y'a 1 heures,60,-,-,240,-180,829,2,30,20/03/2024 03:35
+832,Baguette d'Intelligence,Baguette d'Intelligence,Draconiros,Il y'a 1 heures,13 600,-,-,8 751,+ 4 849,832,2,250,11/04/2024 12:39
+835,Baguette de Sagesse,Baguette de Sagesse,Draconiros,Il y'a 1 heures,9 000,-,-,5 940,+ 3 060,835,2,62,03/04/2024 08:09
+836,Abranneau,Abranneau,Draconiros,Il y'a 1 heures,9 850,-,-,4 336,+ 5 514,836,2,16,05/04/2024 08:28
+837,Bottes de Kluh,Bottes de Kluh,Draconiros,Il y'a 1 heures,300,-,-,984,-684,837,2,144,19/03/2024 09:46
+841,Anneau de Satisfaction,Anneau de Satisfaction,Draconiros,Il y'a 1 heures,3 500,42 999,-,2 223,+ 1 277,841,2,32,09/04/2024 09:13
+849,Anneau Forcesque,Anneau Forcesque,Draconiros,Il y'a 1 heures,25,-,-,957,-932,849,2,212,21/01/2024 11:10
+850,Anneau Agilesque,Anneau Agilesque,Draconiros,Il y'a 1 heures,14,500,-,1 542,-1 528,850,2,20,11/02/2024 11:39
+851,Anneau Vitalesque,Anneau Vitalesque,Draconiros,Il y'a 1 heures,37,440,-,531,-494,851,2,36,25/03/2024 06:36
+852,Petit Anneau Magique,Petit Anneau Magique,Draconiros,Il y'a 1 heures,140,-,-,603,-463,852,2,265,16/03/2024 07:35
+853,Petit Anneau du Chanceux,Petit Anneau du Chanceux,Draconiros,Il y'a 1 heures,40,-,-,969,-929,853,2,219,09/05/2023 10:13
+860,Ceinture de Chance,Ceinture de Chance,Draconiros,Il y'a 1 heures,50,-,-,393,-343,860,2,201,11/02/2024 10:33
+861,Bottes de Force,Bottes de Force,Draconiros,Il y'a 1 heures,79,-,-,306,-227,861,2,85,28/03/2024 11:20
+862,Sandales d'Intelligence,Sandales d'Intelligence,Draconiros,Il y'a 1 heures,5 000,-,-,2 871,+ 2 129,862,2,521,28/03/2024 05:56
+863,Bottes Agilesques,Bottes Agilesques,Draconiros,Il y'a 1 heures,440,-,-,1 575,-1 135,863,2,292,19/03/2024 09:28
+867,Dragolyre,Dragolyre,Draconiros,Il y'a 1 heures,14 985,200 000,-,16 862,-1 877,867,2,54,07/04/2024 11:20
+889,Bottes de Concentration,Bottes de Concentration,Draconiros,Il y'a 1 heures,7 000,-,-,4 277,+ 2 723,889,2,104,14/02/2024 01:27
+892,Bottes du Bouftou,Bottes du Bouftou,Draconiros,Il y'a 1 heures,100,-,-,2 286,-2 186,892,2,100,02/10/2023 05:32
+896,Dagues Sylvestres,Dagues Sylvestres,Draconiros,Il y'a 1 heures,8 700,-,-,7 651,+ 1 049,896,2,98,28/03/2024 12:27
+900,Dagues Aiguisées,Dagues Aiguisées,Draconiros,Il y'a 1 heures,8 398,-,-,6 947,+ 1 451,900,2,98,03/04/2024 11:21
+905,Bottes de Klime,Bottes de Klime,Draconiros,Il y'a 1 heures,1 997,-,-,2 585,-588,905,2,68,22/03/2024 10:41
+909,Bottes de Poursuite,Bottes de Poursuite,Draconiros,Il y'a 1 heures,13 995,-,-,6 739,+ 7 256,909,2,47,27/03/2024 09:18
+910,Bottes d'Hogmeiser,Bottes d'Hogmeiser,Draconiros,Il y'a 1 heures,110 000,-,-,99 719,+ 10 281,910,2,349,02/04/2024 07:00
+911,Bottes Usées d'Hogmeiser,Bottes Usées d'Hogmeiser,Draconiros,Il y'a 1 heures,88 999,-,-,-,-,911,2,4000,11/03/2024 05:54
+912,Bottes Dorées d'Hogmeiser,Bottes Dorées d'Hogmeiser,Draconiros,Il y'a 1 heures,195 000,-,-,118 365,+ 76 635,912,2,301,03/04/2024 01:53
+916,Amulette de Silicate,Amulette de Silicate,Draconiros,Il y'a 1 heures,6 550,-,-,3 061,+ 3 489,916,2,31,08/04/2024 08:42
+917,La Feuille d'Automne,La Feuille d'Automne,Draconiros,Il y'a 1 heures,39 998,-,-,33 285,+ 6 713,917,2,62,11/04/2024 01:18
+919,Dagues Ancestrales,Dagues Ancestrales,Draconiros,Il y'a 1 heures,4 999,-,-,5 785,-786,919,2,82,07/03/2024 11:21
+923,Fendeuse d'Abraknyde,Fendeuse d'Abraknyde,Draconiros,Il y'a 1 heures,59 999,-,-,54 041,+ 5 958,923,2,150,09/04/2024 07:09
+924,Puissantes Bottes de Klime,Puissantes Bottes de Klime,Draconiros,Il y'a 1 heures,290,-,-,585,-295,924,2,52,05/03/2024 07:46
+927,Fendeuse d'Abraknyde Ancestral,Fendeuse d'Abraknyde Ancestral,Draconiros,Il y'a 1 heures,57 999,-,-,48 573,+ 9 426,927,2,123,11/04/2024 11:16
+928,Lame d'Ogralimde,Lame d'Ogralimde,Draconiros,Il y'a 1 heures,26 799,-,-,12 248,+ 14 551,928,2,198,08/04/2024 07:37
+934,Cape de Rougeur,Cape de Rougeur,Draconiros,Il y'a 1 heures,395,-,-,847,-452,934,2,90,01/04/2024 11:52
+937,Cape Bleutée,Cape Bleutée,Draconiros,Il y'a 1 heures,1 500,-,-,2 202,-702,937,2,130,24/03/2024 07:50
+940,Louffeur,Louffeur,Draconiros,Il y'a 1 heures,549,4 999,175 000,456,+ 93,940,2,74,01/04/2024 04:13
+941,Bandeau Komintot,Bandeau Komintot,Draconiros,Il y'a 1 heures,500,-,-,1 137,-637,941,2,222,24/08/2023 10:35
+942,Lisseur,Lisseur,Draconiros,Il y'a 1 heures,38,50,9 999,1 107,-1 069,942,2,44,01/04/2024 11:44
+947,Cape Sombre,Cape Sombre,Draconiros,Il y'a 1 heures,3 488,-,-,2 428,+ 1 060,947,2,230,02/04/2024 08:38
+948,Abracape,Abracape,Draconiros,Il y'a 1 heures,4 900,-,-,6 319,-1 419,948,2,25,08/04/2024 08:26
+949,Bandeau de Vitalité,Bandeau de Vitalité,Draconiros,Il y'a 1 heures,38,4 000,-,501,-463,949,2,43,22/10/2023 04:18
+952,Cape du Mulou Fou,Cape du Mulou Fou,Draconiros,Il y'a 1 heures,1 898,-,-,664,+ 1 234,952,2,20,11/04/2024 09:30
+953,Cape du Tofu Fou,Cape du Tofu Fou,Draconiros,Il y'a 1 heures,13 444,-,-,10 076,+ 3 368,953,2,28,23/03/2024 11:16
+954,La Samoulaille,La Samoulaille,Draconiros,Il y'a 1 heures,1 500,-,-,1 432,+ 68,954,2,50,30/03/2024 04:15
+955,Cape Hilère,Cape Hilère,Draconiros,Il y'a 1 heures,20 000,-,-,8 262,+ 11 738,955,2,37,02/04/2024 09:02
+956,Cape Rice,Cape Rice,Draconiros,Il y'a 1 heures,11 999,-,-,5 392,+ 6 607,956,2,72,06/04/2024 12:25
+957,La Boufteuse,La Boufteuse,Draconiros,Il y'a 1 heures,4 600,-,-,4 149,+ 451,957,2,156,01/04/2024 12:28
+958,Dofusteuse,Dofusteuse,Draconiros,Il y'a 1 heures,2 500 000,-,-,2 199 618,+ 300 382,958,2,50,24/03/2024 05:54
+967,Cape Fulgurante,Cape Fulgurante,Draconiros,Il y'a 1 heures,26 946,-,-,26 530,+ 416,967,2,35,03/04/2024 02:39
+969,Couronne du Wa Wabbit,Couronne du Wa Wabbit,Draconiros,Il y'a 1 heures,11 989,-,-,12 453,-464,969,2,53,01/04/2024 09:46
+970,Bâton du Wa Wabbit,Bâton du Wa Wabbit,Draconiros,Il y'a 1 heures,19 699,-,-,16 895,+ 2 804,970,2,71,06/04/2024 05:07
+971,Cape du Wa Wabbit,Cape du Wa Wabbit,Draconiros,Il y'a 1 heures,16 790,-,-,15 852,+ 938,971,2,99,30/03/2024 05:34
+976,Citwouille,Citwouille,Draconiros,Il y'a 1 heures,1 999,-,-,1 206,+ 793,976,2,65,09/04/2024 05:30
+1019,Casque,Casque,Draconiros,Il y'a 1 heures,1 077,-,-,657,+ 420,1019,2,46,31/10/2020 05:27
+1021,Ailes en bois,Ailes en bois,Draconiros,Il y'a 1 heures,8 485,-,-,7 370,+ 1 115,1021,2,141,01/04/2024 12:15
+1029,Couteau à Stek,Couteau à Stek,Draconiros,Il y'a 1 heures,30 000,-,-,17 039,+ 12 961,1029,2,172,01/04/2024 02:14
+1030,Queues de Chatons,Queues de Chatons,Draconiros,Il y'a 1 heures,18 000,-,-,23 488,-5 488,1030,2,154,31/01/2024 09:34
+1031,Dagues Cruelles d'Elorie Entuwan,Dagues Cruelles d'Elorie Entuwan,Draconiros,Il y'a 1 heures,6 997,-,-,5 739,+ 1 258,1031,2,81,10/04/2024 02:37
+1035,Lame de Fon,Lame de Fon,Draconiros,Il y'a 1 heures,19 500,-,-,20 297,-797,1035,2,160,11/04/2024 11:24
+1039,Dagues Fourbesques,Dagues Fourbesques,Draconiros,Il y'a 1 heures,15 000,-,-,12 774,+ 2 226,1039,2,62,10/04/2024 02:49
+1040,Lames Sanglantes D'Ortimus Contrari,Lames Sanglantes D'Ortimus Contrari,Draconiros,Il y'a 1 heures,31 499,-,-,25 903,+ 5 596,1040,2,32,30/03/2024 08:12
+1041,Épée Cassée du Chevalier Malchanceux,Épée Cassée du Chevalier Malchanceux,Draconiros,Il y'a 1 heures,899,-,-,2 603,-1 704,1041,2,122,24/03/2024 08:59
+1045,Pelle de Bois Dormant,Pelle de Bois Dormant,Draconiros,Il y'a 1 heures,26 999,-,-,11 116,+ 15 883,1045,2,110,07/04/2024 03:38
+1049,Pelle Melle,Pelle Melle,Draconiros,Il y'a 1 heures,10 000,-,-,11 208,-1 208,1049,2,75,06/04/2024 01:31
+1053,Pelle Woukuis,Pelle Woukuis,Draconiros,Il y'a 1 heures,25 100,-,-,27 212,-2 112,1053,2,91,09/04/2024 08:56
+1054,Cruelle Pelle-Truelle,Cruelle Pelle-Truelle,Draconiros,Il y'a 1 heures,15 000,-,-,9 354,+ 5 646,1054,2,31,08/04/2024 03:02
+1058,Pelle de Koutoulou,Pelle de Koutoulou,Draconiros,Il y'a 1 heures,5 049,-,-,4 856,+ 193,1058,2,118,08/04/2024 04:55
+1059,Pelle des Champs,Pelle des Champs,Draconiros,Il y'a 1 heures,1 998,-,-,711,+ 1 287,1059,2,37,07/04/2024 03:36
+1063,Masse d'Ha,Masse d'Ha,Draconiros,Il y'a 1 heures,10 000,-,-,6 068,+ 3 932,1063,2,315,25/03/2024 12:49
+1067,Marteau R'unique,Marteau R'unique,Draconiros,Il y'a 1 heures,2 798,-,-,889,+ 1 909,1067,2,22,08/04/2024 05:51
+1071,Masse Tmosfer,Masse Tmosfer,Draconiros,Il y'a 1 heures,2 998,-,-,2 194,+ 804,1071,2,29,08/04/2024 06:09
+1075,Marteau Outar,Marteau Outar,Draconiros,Il y'a 1 heures,1 979,-,-,3 474,-1 495,1075,2,28,08/04/2024 09:42
+1079,Masse Aj Taye,Masse Aj Taye,Draconiros,Il y'a 1 heures,2 299,-,-,1 131,+ 1 168,1079,2,15,08/04/2024 09:41
+1083,Marteau Pospodrol,Marteau Pospodrol,Draconiros,Il y'a 1 heures,14 800,-,-,9 014,+ 5 786,1083,2,45,10/04/2024 02:48
+1084,Marteau à Torts,Marteau à Torts,Draconiros,Il y'a 1 heures,94 799,-,-,48 013,+ 46 786,1084,2,168,04/04/2024 06:19
+1085,Marteau des Falistos,Marteau des Falistos,Draconiros,Il y'a 1 heures,24 000,-,-,20 466,+ 3 534,1085,2,92,24/03/2024 03:33
+1087,Anneau du Mental,Anneau du Mental,Draconiros,Il y'a 1 heures,399,-,-,1 182,-783,1087,2,84,05/04/2023 05:32
+1088,Masque Kanniboul,Masque Kanniboul,Draconiros,Il y'a 1 heures,10 884,-,-,7 815,+ 3 069,1088,2,100,11/04/2024 12:03
+1095,Arc Buse,Arc Buse,Draconiros,Il y'a 1 heures,6 500,-,-,2 306,+ 4 194,1095,2,51,11/04/2024 12:40
+1104,Baguette Heure,Baguette Heure,Draconiros,Il y'a 1 heures,8 200,-,-,6 120,+ 2 080,1104,2,211,19/01/2024 03:01
+1112,Arc en Corne de Bouftou,Arc en Corne de Bouftou,Draconiros,Il y'a 1 heures,9 450,-,-,2 982,+ 6 468,1112,2,23,24/03/2024 03:25
+1116,"Arc dit Kéha, version standard","Arc dit Kéha, version standard",Draconiros,Il y'a 1 heures,9 980,-,-,11 550,-1 570,1116,2,193,09/04/2024 11:45
+1120,Arc Ecologique,Arc Ecologique,Draconiros,Il y'a 1 heures,2 900,-,-,2 451,+ 449,1120,2,51,04/04/2024 09:58
+1124,Arc de Cristal,Arc de Cristal,Draconiros,Il y'a 1 heures,499 000,-,-,7 566,+ 491 434,1124,2,52,06/04/2024 05:49
+1128,Arc du Roi des Borins,Arc du Roi des Borins,Draconiros,Il y'a 1 heures,24 900,-,-,8 923,+ 15 977,1128,2,33,05/04/2024 06:56
+1131,Baguette d'Eglise,Baguette d'Eglise,Draconiros,Il y'a 1 heures,3 699,-,-,3 214,+ 485,1131,2,37,04/04/2024 06:05
+1132,Baguette Ni'Ninnin,Baguette Ni'Ninnin,Draconiros,Il y'a 1 heures,25 499,-,-,17 017,+ 8 482,1132,2,40,03/03/2024 03:04
+1136,Baguette à Pans,Baguette à Pans,Draconiros,Il y'a 1 heures,34 000,-,-,22 589,+ 11 411,1136,2,287,30/03/2024 10:51
+1140,Baguette d'Houvette,Baguette d'Houvette,Draconiros,Il y'a 1 heures,23 289,-,-,7 779,+ 15 510,1140,2,82,10/04/2024 09:48
+1146,Baguette Meneuse,Baguette Meneuse,Draconiros,Il y'a 1 heures,10 200,-,-,11 051,-851,1146,2,62,06/04/2024 05:41
+1151,Bâton Dakn,Bâton Dakn,Draconiros,Il y'a 1 heures,1 975,-,-,1 814,+ 161,1151,2,37,02/04/2024 08:20
+1157,Bâton-Boule de Voyante,Bâton-Boule de Voyante,Draconiros,Il y'a 1 heures,18 500,-,-,7 374,+ 11 126,1157,2,66,23/03/2024 01:51
+1162,Bâton des Rois,Bâton des Rois,Draconiros,Il y'a 1 heures,29 498,-,-,31 090,-1 592,1162,2,132,20/03/2024 09:40
+1331,Médaille Oly,Médaille Oly,Draconiros,Il y'a 1 heures,26 750,-,-,8 804,+ 17 946,1331,2,76,10/04/2024 04:47
+1350,Arc Holic,Arc Holic,Draconiros,Il y'a 1 heures,130,-,-,417,-287,1350,2,26,01/04/2024 06:38
+1351,Arc du Xueluom,Arc du Xueluom,Draconiros,Il y'a 1 heures,3 450,-,-,17 636,-14 186,1351,2,160,06/04/2024 05:23
+1352,Arc de Boo,Arc de Boo,Draconiros,Il y'a 1 heures,19 500,-,-,14 699,+ 4 801,1352,2,50,29/03/2024 12:01
+1353,Arc à Poulie Sciée,Arc à Poulie Sciée,Draconiros,Il y'a 1 heures,6 499,-,-,3 725,+ 2 774,1353,2,44,01/04/2024 10:37
+1354,L'Arc à Hick,L'Arc à Hick,Draconiros,Il y'a 1 heures,5 400,-,-,2 199,+ 3 201,1354,2,42,02/04/2024 10:38
+1355,Arc Hidsad,Arc Hidsad,Draconiros,Il y'a 1 heures,8 000,-,-,4 609,+ 3 391,1355,2,70,08/04/2024 10:06
+1356,Demi-Baguette,Demi-Baguette,Draconiros,Il y'a 1 heures,1,10,-,912,-911,1356,2,47,06/04/2024 01:23
+1357,Daguette,Daguette,Draconiros,Il y'a 1 heures,5 697,-,-,3 176,+ 2 521,1357,2,41,13/03/2024 01:29
+1359,Le Tison Fûté,Le Tison Fûté,Draconiros,Il y'a 1 heures,8 997,-,-,4 716,+ 4 281,1359,2,40,09/04/2024 08:44
+1360,L'Hyldegarde,L'Hyldegarde,Draconiros,Il y'a 1 heures,10 898,-,-,13 786,-2 888,1360,2,103,31/03/2024 09:56
+1361,Baguette Sylvien,Baguette Sylvien,Draconiros,Il y'a 1 heures,16 000,-,-,13 978,+ 2 022,1361,2,118,24/03/2024 09:04
+1362,Pieu Vampirique,Pieu Vampirique,Draconiros,Il y'a 1 heures,14 998,-,-,16 916,-1 918,1362,2,94,11/04/2024 10:41
+1363,Bâton Tont'Ata,Bâton Tont'Ata,Draconiros,Il y'a 1 heures,18 999,-,-,4 675,+ 14 324,1363,2,80,08/04/2024 10:05
+1364,Bâton d'Oubli,Bâton d'Oubli,Draconiros,Il y'a 1 heures,5 000,-,-,4 572,+ 428,1364,2,109,26/03/2024 06:27
+1365,La Canne Hête,La Canne Hête,Draconiros,Il y'a 1 heures,950,-,-,1 119,-169,1365,2,38,26/03/2024 09:37
+1366,Bâton de Bouftier,Bâton de Bouftier,Draconiros,Il y'a 1 heures,2 500,-,-,12 008,-9 508,1366,2,470,29/02/2024 06:21
+1367,"Bâton de Dina, dit 'le Mythe'","Bâton de Dina, dit 'le Mythe'",Draconiros,Il y'a 1 heures,23 000,-,-,10 245,+ 12 755,1367,2,296,09/04/2024 05:31
+1368,Lance à un 110,Lance à un 110,Draconiros,Il y'a 1 heures,15 500,-,-,10 078,+ 5 422,1368,2,407,10/04/2024 08:34
+1369,Les Lames en Table,Les Lames en Table,Draconiros,Il y'a 1 heures,26 499,-,-,20 882,+ 5 617,1369,2,454,10/04/2024 02:44
+1370,L'Ergot Mina,L'Ergot Mina,Draconiros,Il y'a 1 heures,998,-,-,519,+ 479,1370,2,15,25/03/2024 01:45
+1371,Dagues Eulasse,Dagues Eulasse,Draconiros,Il y'a 1 heures,17 998,-,-,9 274,+ 8 724,1371,2,182,03/04/2024 11:07
+1372,Dagues Aj'Deh'Là,Dagues Aj'Deh'Là,Draconiros,Il y'a 1 heures,21 000,-,-,20 750,+ 250,1372,2,95,10/04/2024 04:23
+1373,Le Rasoir Infernal,Le Rasoir Infernal,Draconiros,Il y'a 1 heures,2 400,-,-,3 732,-1 332,1373,2,102,10/04/2024 03:09
+1374,Dagues Tylo,Dagues Tylo,Draconiros,Il y'a 1 heures,1 700,-,-,1 425,+ 275,1374,2,26,05/04/2024 08:29
+1375,Hache Térophyle,Hache Térophyle,Draconiros,Il y'a 1 heures,7 190,-,-,4 208,+ 2 982,1375,2,637,14/03/2024 10:47
+1376,Hache Heuvante,Hache Heuvante,Draconiros,Il y'a 1 heures,17 498,-,-,9 761,+ 7 737,1376,2,95,20/03/2024 08:54
+1377,Hache Huré,Hache Huré,Draconiros,Il y'a 1 heures,11 287,-,-,7 850,+ 3 437,1377,2,241,12/03/2024 07:46
+1378,Francisque à Brêles,Francisque à Brêles,Draconiros,Il y'a 1 heures,3 999,-,-,3 634,+ 365,1378,2,137,25/03/2024 12:54
+1379,Le Scrounnchhh,Le Scrounnchhh,Draconiros,Il y'a 1 heures,10 000,-,-,7 604,+ 2 396,1379,2,134,01/04/2024 02:40
+1383,Marteau Re'Thu,Marteau Re'Thu,Draconiros,Il y'a 1 heures,9 600,-,-,7 999,+ 1 601,1383,2,80,11/04/2024 02:38
+1393,Le Matronome,Le Matronome,Draconiros,Il y'a 1 heures,19 894,-,-,6 811,+ 13 083,1393,2,51,06/04/2024 01:28
+1399,Maillet Aclou,Maillet Aclou,Draconiros,Il y'a 1 heures,999,40 000,-,1 146,-147,1399,2,30,19/02/2024 08:15
+1403,Marteau Tau,Marteau Tau,Draconiros,Il y'a 1 heures,2 990,-,-,1 993,+ 997,1403,2,51,08/04/2024 05:50
+1404,Marteau Toh'Lo,Marteau Toh'Lo,Draconiros,Il y'a 1 heures,7 987,-,-,3 452,+ 4 535,1404,2,88,29/03/2024 12:45
+1426,Pelle à Thart',Pelle à Thart',Draconiros,Il y'a 1 heures,3 750,-,-,733,+ 3 017,1426,2,43,10/04/2024 02:17
+1427,Pelle Zébuth,Pelle Zébuth,Draconiros,Il y'a 1 heures,18 480,-,-,10 495,+ 7 985,1427,2,87,04/04/2024 02:57
+1431,Pelle Mechba,Pelle Mechba,Draconiros,Il y'a 1 heures,2 800,-,-,3 121,-321,1431,2,14,09/04/2024 11:39
+1432,Pelle Houze,Pelle Houze,Draconiros,Il y'a 1 heures,11 999,-,-,5 728,+ 6 271,1432,2,148,10/03/2024 03:33
+1433,Pelle Sécutrice,Pelle Sécutrice,Draconiros,Il y'a 1 heures,55 898,-,-,39 559,+ 16 339,1433,2,200,28/03/2024 08:30
+1435,La Pelle du Large,La Pelle du Large,Draconiros,Il y'a 1 heures,84 000,-,-,55 323,+ 28 677,1435,2,145,26/03/2024 04:15
+1436,Pelle Ikan,Pelle Ikan,Draconiros,Il y'a 1 heures,10 000,-,-,9 548,+ 452,1436,2,99,06/04/2024 01:28
+1439,Mauvaise Pioche,Mauvaise Pioche,Draconiros,Il y'a 1 heures,2 000,44 500,250 000,2 225,-225,1439,2,120,21/04/2023 04:09
+1474,Amulette de Xélor,Amulette de Xélor,Draconiros,Il y'a 1 heures,29 974,-,-,9 535,+ 20 439,1474,2,21,11/04/2024 08:23
+1475,La Zulie Lame,La Zulie Lame,Draconiros,Il y'a 1 heures,35 996,-,-,16 620,+ 19 376,1475,2,108,08/04/2024 03:42
+1476,Amulette du Craqueleur,Amulette du Craqueleur,Draconiros,Il y'a 1 heures,30 000,-,-,18 718,+ 11 282,1476,2,32,02/04/2024 08:17
+1477,Chance à Mulette,Chance à Mulette,Draconiros,Il y'a 1 heures,24 000,-,-,15 185,+ 8 815,1477,2,82,11/04/2024 04:18
+1478,Harmonie,Harmonie,Draconiros,Il y'a 1 heures,40 999,-,-,11 171,+ 29 828,1478,2,234,26/03/2024 07:22
+1479,Le Twote en Carton,Le Twote en Carton,Draconiros,Il y'a 1 heures,14 000,-,-,13 303,+ 697,1479,2,147,10/04/2024 04:07
+1480,Accord,Accord,Draconiros,Il y'a 1 heures,6 999,-,-,7 238,-239,1480,2,133,09/02/2024 12:52
+1481,Entente,Entente,Draconiros,Il y'a 1 heures,3 000,-,-,2 381,+ 619,1481,2,92,24/03/2024 08:54
+1482,Emblème Livide,Emblème Livide,Draconiros,Il y'a 1 heures,57 998,-,-,16 180,+ 41 818,1482,2,10,15/02/2024 03:22
+1483,Kabale,Kabale,Draconiros,Il y'a 1 heures,1 000,-,-,2 788,-1 788,1483,2,122,01/04/2024 04:50
+1484,Amulette Itby,Amulette Itby,Draconiros,Il y'a 1 heures,398,-,-,408,-10,1484,2,59,08/03/2024 01:17
+1485,La Reinette,La Reinette,Draconiros,Il y'a 1 heures,1 499,-,-,873,+ 626,1485,2,36,22/03/2024 06:28
+1486,Médaille Holy,Médaille Holy,Draconiros,Il y'a 1 heures,17 996,-,-,15 844,+ 2 152,1486,2,315,03/04/2024 12:21
+1487,L'Adelus,L'Adelus,Draconiros,Il y'a 1 heures,28 000,-,-,17 079,+ 10 921,1487,2,53,29/01/2024 05:18
+1488,Plimclik,Plimclik,Draconiros,Il y'a 1 heures,84 994,-,-,93 200,-8 206,1488,2,42,26/03/2024 06:12
+1489,La Broche Hète,La Broche Hète,Draconiros,Il y'a 1 heures,8 999,-,-,8 066,+ 933,1489,2,351,06/04/2024 03:14
+1490,La Chaîne Nhanor Kibrill,La Chaîne Nhanor Kibrill,Draconiros,Il y'a 1 heures,949,-,-,1 407,-458,1490,2,216,08/03/2024 01:18
+1491,Chaîne de la Liche,Chaîne de la Liche,Draconiros,Il y'a 1 heures,20 000,-,-,16 648,+ 3 352,1491,2,344,09/04/2024 01:56
+1493,Blessure du Sacrieur,Blessure du Sacrieur,Draconiros,Il y'a 1 heures,5 983,-,-,1 839,+ 4 144,1493,2,404,23/03/2024 04:22
+1494,Le Bagueur,Le Bagueur,Draconiros,Il y'a 1 heures,6 000,-,-,4 063,+ 1 937,1494,2,251,25/02/2024 08:08
+1495,L'Anneau Dhyn,L'Anneau Dhyn,Draconiros,Il y'a 1 heures,10 999,-,-,5 454,+ 5 545,1495,2,30,15/03/2024 08:23
+1496,Chance d'Ecaflip,Chance d'Ecaflip,Draconiros,Il y'a 1 heures,699,-,-,1 301,-602,1496,2,26,02/04/2024 07:31
+1497,Passé de Xélor,Passé de Xélor,Draconiros,Il y'a 1 heures,4 998,-,-,4 544,+ 454,1497,2,95,01/04/2024 05:54
+1498,Souvenir d'Enutrof,Souvenir d'Enutrof,Draconiros,Il y'a 1 heures,8 597,-,-,2 540,+ 6 057,1498,2,102,03/03/2024 03:38
+1499,L'Enutrofion,L'Enutrofion,Draconiros,Il y'a 1 heures,25 997,-,-,15 077,+ 10 920,1499,2,200,11/04/2024 11:11
+1500,La Mokette,La Mokette,Draconiros,Il y'a 1 heures,23 900,-,-,18 217,+ 5 683,1500,2,138,08/04/2024 08:03
+1501,Alliance,Alliance,Draconiros,Il y'a 1 heures,10 499,-,-,-,-,1501,2,130,17/04/2023 10:46
+1503,Baguette de Feu Follesque,Baguette de Feu Follesque,Draconiros,Il y'a 1 heures,900,-,-,372,+ 528,1503,2,1,08/04/2024 06:34
+1504,Dagues O'Bert,Dagues O'Bert,Draconiros,Il y'a 1 heures,9 998,-,-,17 065,-7 067,1504,2,179,25/03/2024 05:03
+1511,Neuf Queues,Neuf Queues,Draconiros,Il y'a 1 heures,39 990,-,-,35 373,+ 4 617,1511,2,53,02/04/2024 06:41
+1559,Abranneau Mou,Abranneau Mou,Draconiros,Il y'a 1 heures,18 999,-,-,14 668,+ 4 331,1559,2,138,13/03/2024 08:36
+1574,Découpeuse de Yench,Découpeuse de Yench,Draconiros,Il y'a 1 heures,36 000,-,-,30 947,+ 5 053,1574,2,143,09/04/2024 05:41
+1602,Abranneau Sombre,Abranneau Sombre,Draconiros,Il y'a 1 heures,2 799,-,-,4 134,-1 335,1602,2,73,18/03/2024 02:54
+1619,Abramu,Abramu,Draconiros,Il y'a 1 heures,16 895,-,-,17 076,-181,1619,2,29,09/04/2024 09:26
+1620,Abrarc,Abrarc,Draconiros,Il y'a 1 heures,14 998,-,-,10 026,+ 4 972,1620,2,215,29/03/2024 12:06
+1621,Bottes de Maîtrise,Bottes de Maîtrise,Draconiros,Il y'a 1 heures,14 994,-,-,10 361,+ 4 633,1621,2,476,14/02/2024 01:13
+1622,Bottes de Puissance,Bottes de Puissance,Draconiros,Il y'a 1 heures,6 000,-,-,713,+ 5 287,1622,2,34,29/02/2024 10:19
+1623,Bottes d'Anticipation,Bottes d'Anticipation,Draconiros,Il y'a 1 heures,8 000,-,-,20 308,-12 308,1623,2,365,11/04/2024 04:51
+1624,Bottes de Nexus,Bottes de Nexus,Draconiros,Il y'a 1 heures,2 500,-,-,2 352,+ 148,1624,2,239,16/03/2024 02:28
+1639,Etoile du soir,Etoile du soir,Draconiros,Il y'a 1 heures,39 998,-,-,20 322,+ 19 676,1639,2,141,02/04/2024 08:26
+1651,Le Cutter,Le Cutter,Draconiros,Il y'a 1 heures,24 997,-,-,19 137,+ 5 860,1651,2,129,10/04/2024 04:27
+1656,Fécaliseur du Magicien,Fécaliseur du Magicien,Draconiros,Il y'a 1 heures,999,-,-,1 266,-267,1656,2,53,31/03/2024 06:46
+1657,Fécaliseur du Guerrier,Fécaliseur du Guerrier,Draconiros,Il y'a 1 heures,5 600,-,-,4 126,+ 1 474,1657,2,130,29/03/2024 03:54
+1661,Ambramulette Moskito,Ambramulette Moskito,Draconiros,Il y'a 1 heures,3 999,-,-,6 175,-2 176,1661,2,72,06/04/2024 10:43
+1662,Ambramulette Arakne,Ambramulette Arakne,Draconiros,Il y'a 1 heures,7 499,-,-,8 440,-941,1662,2,152,31/03/2024 05:03
+1665,Bottes d'Apprentissage,Bottes d'Apprentissage,Draconiros,Il y'a 1 heures,18 996,-,-,9 487,+ 9 509,1665,2,89,08/04/2024 11:30
+1666,Bottes de l'Apprenti Invocateur,Bottes de l'Apprenti Invocateur,Draconiros,Il y'a 1 heures,47 999,-,-,26 678,+ 21 321,1666,2,33,06/04/2024 08:06
+1667,Ceinture Luthuthu,Ceinture Luthuthu,Draconiros,Il y'a 1 heures,15 000,-,-,8 239,+ 6 761,1667,2,79,08/04/2024 11:29
+1668,Ceinture du Dodu Trembleur,Ceinture du Dodu Trembleur,Draconiros,Il y'a 1 heures,23 000,-,-,6 940,+ 16 060,1668,2,53,10/04/2024 01:41
+1669,Ceinture des Vents,Ceinture des Vents,Draconiros,Il y'a 1 heures,28 400,-,-,30 051,-1 651,1669,2,70,07/04/2024 10:26
+1693,Cape de Jules Yanos,Cape de Jules Yanos,Draconiros,Il y'a 1 heures,29 498,-,-,9 098,+ 20 400,1693,2,33,03/04/2024 02:35
+1695,Cape d'Elya Wood,Cape d'Elya Wood,Draconiros,Il y'a 1 heures,41 000,-,-,54 567,-13 567,1695,2,103,03/04/2024 12:45
+1697,Petit Sac en Laine de Boufton,Petit Sac en Laine de Boufton,Draconiros,Il y'a 1 heures,200,-,-,375,-175,1697,2,40,09/04/2024 01:10
+1698,Sac du Petit Récolteur,Sac du Petit Récolteur,Draconiros,Il y'a 1 heures,11 900,-,-,9 494,+ 2 406,1698,2,1130,09/04/2024 06:57
+1699,Sac du Petit Aventurier,Sac du Petit Aventurier,Draconiros,Il y'a 1 heures,75 490,-,-,80 730,-5 240,1699,2,2596,20/05/2022 07:13
+1700,Ceinture de Célérité,Ceinture de Célérité,Draconiros,Il y'a 1 heures,1 000,-,-,2 524,-1 524,1700,2,78,04/04/2024 04:55
+1701,Ceinture de Poche,Ceinture de Poche,Draconiros,Il y'a 1 heures,5 500,-,-,2 670,+ 2 830,1701,2,88,11/02/2024 03:39
+1703,Sac du Grand Récolteur,Sac du Grand Récolteur,Draconiros,Il y'a 1 heures,35 997,-,-,23 874,+ 12 123,1703,2,578,06/04/2024 05:58
+1704,Sac du Staca Noviste,Sac du Staca Noviste,Draconiros,Il y'a 1 heures,12 000,-,-,3 805,+ 8 195,1704,2,1,08/03/2024 06:04
+1705,Sac de l'Aventurier,Sac de l'Aventurier,Draconiros,Il y'a 1 heures,1 900,5 000,-,4 895,-2 995,1705,2,41,29/03/2024 05:33
+1707,Sac du Grand Aventurier,Sac du Grand Aventurier,Draconiros,Il y'a 1 heures,45 899,-,-,39 560,+ 6 339,1707,2,174,10/04/2024 09:09
+1718,Force de Crocoburio,Force de Crocoburio,Draconiros,Il y'a 1 heures,13 999,-,-,5 111,+ 8 888,1718,2,144,09/04/2024 01:27
+1719,Esprit de Crocoburio,Esprit de Crocoburio,Draconiros,Il y'a 1 heures,52 000,-,-,29 917,+ 22 083,1719,2,75,24/03/2024 12:09
+1720,Puissance de Crocoburio,Puissance de Crocoburio,Draconiros,Il y'a 1 heures,14 498,-,-,16 919,-2 421,1720,2,248,28/03/2024 11:43
+1739,Baguette Affeulante,Baguette Affeulante,Draconiros,Il y'a 1 heures,24 990,-,-,31 445,-6 455,1739,2,77,08/04/2024 08:26
+1904,Dragocoiffe Calcaire,Dragocoiffe Calcaire,Draconiros,Il y'a 1 heures,31 992,-,-,19 733,+ 12 259,1904,2,121,31/03/2024 12:03
+1908,Casque du Chafer,Casque du Chafer,Draconiros,Il y'a 1 heures,10 500,-,-,5 798,+ 4 702,1908,2,14,04/04/2024 06:02
+1910,Cape Ouginak,Cape Ouginak,Draconiros,Il y'a 1 heures,11 000,-,-,8 726,+ 2 274,1910,2,74,31/03/2024 02:03
+1934,Couteau de Chasse,Couteau de Chasse,Draconiros,Il y'a 1 heures,833,3 000,-,1 128,-295,1934,2,51,01/04/2024 11:51
+1942,Arc de Chasse,Arc de Chasse,Draconiros,Il y'a 1 heures,100,3 000,-,669,-569,1942,2,19,04/04/2024 04:32
+2061,Cape du Corbac,Cape du Corbac,Draconiros,Il y'a 1 heures,16 998,-,-,12 798,+ 4 200,2061,2,56,10/04/2024 08:02
+2063,Bottes Volatiles,Bottes Volatiles,Draconiros,Il y'a 1 heures,17 995,-,-,10 875,+ 7 120,2063,2,100,31/03/2024 04:29
+2066,Trident du Kanigrou,Trident du Kanigrou,Draconiros,Il y'a 1 heures,24 999,-,-,13 578,+ 11 421,2066,2,230,07/04/2024 06:13
+2070,Shako,Shako,Draconiros,Il y'a 1 heures,1 999,-,-,2 365,-366,2070,2,54,10/04/2024 02:22
+2094,Makroute Sombre,Makroute Sombre,Draconiros,Il y'a 1 heures,24 000,-,-,16 725,+ 7 275,2094,2,208,10/04/2024 02:39
+2095,Le Ours,Le Ours,Draconiros,Il y'a 1 heures,666,-,-,964,-298,2095,2,27,06/04/2024 12:35
+2096,Dora Sombre de Brave,Dora Sombre de Brave,Draconiros,Il y'a 1 heures,599,-,-,2 691,-2 092,2096,2,48,23/03/2024 01:55
+2097,Champo,Champo,Draconiros,Il y'a 1 heures,14 000,-,-,13 637,+ 363,2097,2,145,11/04/2024 04:54
+2104,Kraignosse,Kraignosse,Draconiros,Il y'a 1 heures,13 996,-,-,11 143,+ 2 853,2104,2,106,12/04/2024 12:51
+2118,Cape Brâkmarienne,Cape Brâkmarienne,Draconiros,Il y'a 1 heures,18 885,198 982,-,15 066,+ 3 819,2118,2,130,09/04/2024 01:03
+2119,Cape Bontarienne,Cape Bontarienne,Draconiros,Il y'a 1 heures,22 899,244 997,-,19 620,+ 3 279,2119,2,130,09/04/2024 01:06
+2233,La Croqueuse,La Croqueuse,Draconiros,Il y'a 1 heures,780,-,-,980,-200,2233,2,10,07/04/2024 11:18
+2367,L'Ami Léhunui,L'Ami Léhunui,Draconiros,Il y'a 1 heures,4 299,-,-,2 998,+ 1 301,2367,2,36,07/04/2024 11:43
+2368,Ramoume l'Eternelle,Ramoume l'Eternelle,Draconiros,Il y'a 1 heures,13 350,-,-,2 578,+ 10 772,2368,2,36,06/04/2024 05:49
+2369,Puissante Ceinture Fulgurante,Puissante Ceinture Fulgurante,Draconiros,Il y'a 1 heures,37 999,-,-,32 240,+ 5 759,2369,2,26,09/04/2024 10:37
+2370,La Végète Hâtif,La Végète Hâtif,Draconiros,Il y'a 1 heures,43 980,-,-,11 323,+ 32 657,2370,2,176,31/03/2024 10:13
+2371,La Mouthmou,La Mouthmou,Draconiros,Il y'a 1 heures,3 450,-,-,2 608,+ 842,2371,2,78,28/03/2024 01:04
+2372,Bottes de Lymphe a Tik,Bottes de Lymphe a Tik,Draconiros,Il y'a 1 heures,17 799,-,-,8 068,+ 9 731,2372,2,175,17/03/2024 11:34
+2373,Moon Boutse,Moon Boutse,Draconiros,Il y'a 1 heures,28 999,-,-,28 658,+ 341,2373,2,167,11/04/2024 03:41
+2374,Bottes Tarsy,Bottes Tarsy,Draconiros,Il y'a 1 heures,27 999,-,-,19 228,+ 8 771,2374,2,207,31/03/2024 01:18
+2375,Bottes Orino,Bottes Orino,Draconiros,Il y'a 1 heures,19 900,-,-,17 417,+ 2 483,2375,2,37,08/04/2024 08:31
+2376,Hache Hémal,Hache Hémal,Draconiros,Il y'a 1 heures,10,90,-,558,-548,2376,2,86,06/04/2024 06:17
+2380,Cape de Bou,Cape de Bou,Draconiros,Il y'a 1 heures,2 499,-,-,4 429,-1 930,2380,2,49,10/04/2024 04:23
+2381,Cape Flotteuse,Cape Flotteuse,Draconiros,Il y'a 1 heures,20 000,-,-,16 544,+ 3 456,2381,2,114,09/04/2024 09:49
+2382,Cape Maimpa,Cape Maimpa,Draconiros,Il y'a 1 heures,1 945,-,-,677,+ 1 268,2382,2,12,11/04/2024 02:10
+2383,Cape Sanguine,Cape Sanguine,Draconiros,Il y'a 1 heures,28 888,-,-,23 837,+ 5 051,2383,2,219,01/04/2024 10:22
+2384,Bottes Animales,Bottes Animales,Draconiros,Il y'a 1 heures,119 999,-,-,91 099,+ 28 900,2384,2,102,09/04/2024 11:31
+2385,La Brouteuse,La Brouteuse,Draconiros,Il y'a 1 heures,24 498,-,-,34 781,-10 283,2385,2,57,06/04/2024 10:31
+2386,La Guenille,La Guenille,Draconiros,Il y'a 1 heures,4 100,-,-,4 934,-834,2386,2,22,08/04/2024 05:41
+2387,La Poilue,La Poilue,Draconiros,Il y'a 1 heures,18 998,-,-,15 713,+ 3 285,2387,2,86,05/04/2024 10:21
+2388,L'Amulette du Puzzle de la Griffe,L'Amulette du Puzzle de la Griffe,Draconiros,Il y'a 1 heures,10 997,-,-,11 205,-208,2388,2,152,29/03/2024 12:12
+2389,Amulette du Badoul,Amulette du Badoul,Draconiros,Il y'a 1 heures,6 998,-,-,6 020,+ 978,2389,2,106,08/03/2024 01:28
+2390,Amulette de la Boule,Amulette de la Boule,Draconiros,Il y'a 1 heures,6 490,-,-,6 619,-129,2390,2,54,11/04/2024 08:26
+2391,Amulette de la Bouboule,Amulette de la Bouboule,Draconiros,Il y'a 1 heures,61 000,-,-,51 903,+ 9 097,2391,2,32,05/04/2024 03:58
+2392,Dragolyre Remaniée,Dragolyre Remaniée,Draconiros,Il y'a 1 heures,34 998,-,-,19 570,+ 15 428,2392,2,96,05/04/2024 09:35
+2393,Omelette Amulette,Omelette Amulette,Draconiros,Il y'a 1 heures,23 999,-,-,4 666,+ 19 333,2393,2,59,02/05/2023 08:04
+2394,La Bourgeonette,La Bourgeonette,Draconiros,Il y'a 1 heures,2 800,-,-,1 238,+ 1 562,2394,2,22,03/04/2024 03:32
+2395,Le foulard du Lard Fou,Le foulard du Lard Fou,Draconiros,Il y'a 1 heures,6 999,-,-,9 091,-2 092,2395,2,171,10/04/2024 10:23
+2396,La Lou Ptiote,La Lou Ptiote,Draconiros,Il y'a 1 heures,1 730,-,-,12 975,-11 245,2396,2,436,22/01/2024 02:36
+2397,La Bibelaw,La Bibelaw,Draconiros,Il y'a 1 heures,11 111,-,-,19 193,-8 082,2397,2,177,31/03/2024 03:32
+2398,L'Œil de Kanigrou,L'Œil de Kanigrou,Draconiros,Il y'a 1 heures,28 399,-,-,10 580,+ 17 819,2398,2,81,09/04/2024 07:16
+2399,La Veaux Doux,La Veaux Doux,Draconiros,Il y'a 1 heures,798,-,-,357,+ 441,2399,2,221,12/03/2024 10:19
+2400,Bottes Animales Sombres,Bottes Animales Sombres,Draconiros,Il y'a 1 heures,300 000,-,-,178 818,+ 121 182,2400,2,112,08/04/2024 07:58
+2403,Chtévu,Chtévu,Draconiros,Il y'a 1 heures,21 800,-,-,8 056,+ 13 744,2403,2,44,07/04/2024 09:24
+2404,Ceinture du Rat,Ceinture du Rat,Draconiros,Il y'a 1 heures,10 000,-,-,3 378,+ 6 622,2404,2,37,08/04/2024 10:54
+2409,Kwakoiffe de Flammes,Kwakoiffe de Flammes,Draconiros,Il y'a 1 heures,16 498,-,-,10 521,+ 5 977,2409,2,192,11/04/2024 11:31
+2410,Abracaska,Abracaska,Draconiros,Il y'a 1 heures,19 999,-,-,16 217,+ 3 782,2410,2,150,10/04/2024 10:02
+2411,Coiffe du Bouftou,Coiffe du Bouftou,Draconiros,Il y'a 1 heures,500,-,-,7 671,-7 171,2411,2,20,08/04/2024 04:39
+2412,Kwape de Flammes,Kwape de Flammes,Draconiros,Il y'a 1 heures,14 999,-,-,12 418,+ 2 581,2412,2,254,03/04/2024 12:21
+2413,Abracapa,Abracapa,Draconiros,Il y'a 1 heures,10 000,-,-,10 247,-247,2413,2,139,11/04/2024 04:35
+2414,Cape Bouffante,Cape Bouffante,Draconiros,Il y'a 1 heures,278,-,-,7 414,-7 136,2414,2,1,31/03/2024 11:32
+2415,Kwaklame de Flammes,Kwaklame de Flammes,Draconiros,Il y'a 1 heures,24 000,-,-,15 718,+ 8 282,2415,2,247,01/04/2024 02:36
+2416,Marteau du Bouftou,Marteau du Bouftou,Draconiros,Il y'a 1 heures,799,-,-,4 509,-3 710,2416,2,17,08/04/2024 04:42
+2417,Abraton,Abraton,Draconiros,Il y'a 1 heures,20 000,-,-,17 846,+ 2 154,2417,2,231,23/03/2024 07:24
+2418,Kwakanneau de Flammes,Kwakanneau de Flammes,Draconiros,Il y'a 1 heures,28 000,-,-,15 029,+ 12 971,2418,2,310,24/03/2024 09:24
+2419,Anneau de Bouze le Clerc,Anneau de Bouze le Clerc,Draconiros,Il y'a 1 heures,68,-,-,7 013,-6 945,2419,2,17,08/04/2024 04:41
+2420,Anobra,Anobra,Draconiros,Il y'a 1 heures,19 999,-,-,14 892,+ 5 107,2420,2,276,06/04/2024 03:26
+2421,Kwakobottes de Flammes,Kwakobottes de Flammes,Draconiros,Il y'a 1 heures,27 000,-,-,23 699,+ 3 301,2421,2,377,31/03/2024 05:44
+2422,Boufbottes,Boufbottes,Draconiros,Il y'a 1 heures,89,-,-,7 583,-7 494,2422,2,11,08/04/2024 04:40
+2423,Abrabottes,Abrabottes,Draconiros,Il y'a 1 heures,10 000,-,-,16 857,-6 857,2423,2,152,11/04/2024 04:35
+2424,Amukwak de Flammes,Amukwak de Flammes,Draconiros,Il y'a 1 heures,17 499,-,-,15 547,+ 1 952,2424,2,268,11/04/2024 11:36
+2425,Amulette du Bouftou,Amulette du Bouftou,Draconiros,Il y'a 1 heures,898,-,-,4 008,-3 110,2425,2,14,14/03/2024 10:47
+2426,Araknamu,Araknamu,Draconiros,Il y'a 1 heures,15 499,-,-,11 827,+ 3 672,2426,2,154,06/04/2024 03:14
+2427,Kwakture de Flammes,Kwakture de Flammes,Draconiros,Il y'a 1 heures,37 000,-,-,12 961,+ 24 039,2427,2,82,25/03/2024 08:54
+2428,Ceinture du Bouftou,Ceinture du Bouftou,Draconiros,Il y'a 1 heures,380,-,-,6 973,-6 593,2428,2,12,08/04/2024 04:40
+2429,Abrature,Abrature,Draconiros,Il y'a 1 heures,10 000,-,-,14 387,-4 387,2429,2,166,30/03/2024 03:09
+2435,L'Eni Kère,L'Eni Kère,Draconiros,Il y'a 1 heures,20 893,-,-,11 163,+ 9 730,2435,2,298,07/04/2024 05:56
+2438,Boufcoiffe Royale,Boufcoiffe Royale,Draconiros,Il y'a 1 heures,3 900,-,-,5 722,-1 822,2438,2,132,03/04/2024 12:34
+2440,Épée Royale du Bouftou,Épée Royale du Bouftou,Draconiros,Il y'a 1 heures,1 199,-,-,990,+ 209,2440,2,26,08/04/2024 05:52
+2441,Anneau Royal du Bouftou,Anneau Royal du Bouftou,Draconiros,Il y'a 1 heures,6 899,-,-,5 472,+ 1 427,2441,2,78,02/04/2024 08:35
+2442,Boufbottes Royales,Boufbottes Royales,Draconiros,Il y'a 1 heures,1 900,-,-,962,+ 938,2442,2,17,03/04/2024 12:35
+2443,Amulette Royale du Bouftou,Amulette Royale du Bouftou,Draconiros,Il y'a 1 heures,7 000,-,-,5 252,+ 1 748,2443,2,91,22/03/2024 06:29
+2444,Ceinture Royale du Bouftou,Ceinture Royale du Bouftou,Draconiros,Il y'a 1 heures,8 000,-,-,4 262,+ 3 738,2444,2,47,25/03/2024 09:47
+2445,Cape Bouffante Royale,Cape Bouffante Royale,Draconiros,Il y'a 1 heures,4 800,-,-,8 538,-3 738,2445,2,118,09/03/2024 07:12
+2446,Gelocape,Gelocape,Draconiros,Il y'a 1 heures,19 000,-,-,15 623,+ 3 377,2446,2,83,03/04/2024 03:06
+2447,Gelocoiffe,Gelocoiffe,Draconiros,Il y'a 1 heures,18 788,-,-,21 460,-2 672,2447,2,114,10/04/2024 04:31
+2469,Gelano,Gelano,Draconiros,Il y'a 1 heures,76 990,16 999 999,-,62 954,+ 14 036,2469,2,60,10/04/2024 08:22
+2470,Gelobottes,Gelobottes,Draconiros,Il y'a 1 heures,19 399,-,-,13 167,+ 6 232,2470,2,42,09/04/2024 07:26
+2471,Geloture,Geloture,Draconiros,Il y'a 1 heures,18 000,-,-,20 122,-2 122,2471,2,137,09/04/2024 07:21
+2472,Gelamu,Gelamu,Draconiros,Il y'a 1 heures,17 000,-,-,13 035,+ 3 965,2472,2,96,07/04/2024 01:42
+2473,Cape de l'Aventurier,Cape de l'Aventurier,Draconiros,Il y'a 1 heures,97,800,-,423,-326,2473,2,29,08/04/2024 11:51
+2474,Chapeau de l'Aventurier,Chapeau de l'Aventurier,Draconiros,Il y'a 1 heures,7,-,-,576,-569,2474,2,13,09/04/2024 12:16
+2475,Anneau de l'Aventurier,Anneau de l'Aventurier,Draconiros,Il y'a 1 heures,1,400,-,99,-98,2475,2,13,15/02/2024 07:37
+2476,Bottes de l'Aventurier,Bottes de l'Aventurier,Draconiros,Il y'a 1 heures,20,3 000,-,348,-328,2476,2,15,02/04/2024 05:41
+2477,Ceinture de l'aventurier,Ceinture de l'aventurier,Draconiros,Il y'a 1 heures,79,-,-,867,-788,2477,2,30,08/04/2024 11:44
+2478,Amulette de l'Aventurier,Amulette de l'Aventurier,Draconiros,Il y'a 1 heures,1,6,-,375,-374,2478,2,16,02/04/2024 05:42
+2485,Végacoiffe,Végacoiffe,Draconiros,Il y'a 1 heures,31 000,-,-,17 256,+ 13 744,2485,2,239,06/04/2024 10:14
+2489,Vegacape,Vegacape,Draconiros,Il y'a 1 heures,18 798,-,-,12 633,+ 6 165,2489,2,78,03/04/2024 02:43
+2498,Vegamu,Vegamu,Draconiros,Il y'a 1 heures,26 999,-,-,12 916,+ 14 083,2498,2,45,22/03/2024 09:10
+2521,Mégabottes,Mégabottes,Draconiros,Il y'a 1 heures,6 900,-,-,5 972,+ 928,2521,2,180,10/04/2024 12:45
+2522,Bottes Vioutifoule,Bottes Vioutifoule,Draconiros,Il y'a 1 heures,3 198,-,-,3 513,-315,2522,2,60,22/03/2024 09:11
+2523,Mégature,Mégature,Draconiros,Il y'a 1 heures,39 500,-,-,14 946,+ 24 554,2523,2,10,09/04/2024 07:43
+2524,Ceinture Vioutifoule,Ceinture Vioutifoule,Draconiros,Il y'a 1 heures,24 996,-,-,14 310,+ 10 686,2524,2,233,09/04/2024 09:20
+2530,Carabottes,Carabottes,Draconiros,Il y'a 1 heures,28 998,-,-,24 328,+ 4 670,2530,2,206,09/04/2024 07:25
+2531,Caracoiffe,Caracoiffe,Draconiros,Il y'a 1 heures,18 950,-,-,19 834,-884,2531,2,37,06/04/2024 02:58
+2532,Caracape,Caracape,Draconiros,Il y'a 1 heures,21 897,-,-,19 612,+ 2 285,2532,2,81,23/03/2024 06:17
+2534,Kwape de Glace,Kwape de Glace,Draconiros,Il y'a 1 heures,23 950,-,-,22 432,+ 1 518,2534,2,100,01/04/2024 07:22
+2535,Kwakoiffe de Glace,Kwakoiffe de Glace,Draconiros,Il y'a 1 heures,19 300,-,-,15 389,+ 3 911,2535,2,227,06/04/2024 08:56
+2537,Kwakture de Glace,Kwakture de Glace,Draconiros,Il y'a 1 heures,16 990,-,-,10 802,+ 6 188,2537,2,213,11/04/2024 09:42
+2544,Corbalame,Corbalame,Draconiros,Il y'a 1 heures,18 500,-,-,14 068,+ 4 432,2544,2,134,08/04/2024 03:44
+2545,Corbottes,Corbottes,Draconiros,Il y'a 1 heures,20 988,-,-,13 580,+ 7 408,2545,2,182,28/02/2024 07:00
+2546,Corbacoiffe,Corbacoiffe,Draconiros,Il y'a 1 heures,9 989,-,-,10 388,-399,2546,2,135,27/03/2024 02:14
+2547,Corbacape Mastralis,Corbacape Mastralis,Draconiros,Il y'a 1 heures,369 000,-,-,366 371,+ 2 629,2547,2,215,06/04/2024 08:00
+2587,Hachette de Bûcheron,Hachette de Bûcheron,Draconiros,Il y'a 1 heures,1,-,-,1 549,-1 548,2587,2,96,19/03/2024 10:37
+2589,Hachette Hévlalav,Hachette Hévlalav,Draconiros,Il y'a 1 heures,400,15 000,-,1 734,-1 334,2589,2,255,19/03/2024 02:21
+2590,Hache Vôr'Om,Hache Vôr'Om,Draconiros,Il y'a 1 heures,3 000,-,-,2 943,+ 57,2590,2,343,01/04/2024 11:59
+2592,Coupeuse de Bombu,Coupeuse de Bombu,Draconiros,Il y'a 1 heures,2 799,-,-,2 554,+ 245,2592,2,52,02/04/2024 06:38
+2593,Elagueuse d'Oliviolet,Elagueuse d'Oliviolet,Draconiros,Il y'a 1 heures,6 749,-,-,3 214,+ 3 535,2593,2,49,01/04/2024 02:39
+2595,Hache de Pierre,Hache de Pierre,Draconiros,Il y'a 1 heures,18 999,-,-,5 664,+ 13 335,2595,2,104,08/04/2024 10:09
+2597,Hache de Brèche,Hache de Brèche,Draconiros,Il y'a 1 heures,10 499,-,-,3 249,+ 7 250,2597,2,23,23/03/2024 07:31
+2600,Coupeuse de Sifflet,Coupeuse de Sifflet,Draconiros,Il y'a 1 heures,8 000,-,-,6 758,+ 1 242,2600,2,38,13/03/2024 07:31
+2601,Hache Darsson,Hache Darsson,Draconiros,Il y'a 1 heures,8 000,-,-,8 762,-762,2601,2,58,03/04/2024 03:32
+2603,Trancheuse de Partie,Trancheuse de Partie,Draconiros,Il y'a 1 heures,11 999,-,-,8 994,+ 3 005,2603,2,36,30/03/2024 08:25
+2604,Bardiche du Milicien,Bardiche du Milicien,Draconiros,Il y'a 1 heures,116 998,-,-,25 803,+ 91 195,2604,2,110,09/04/2024 12:59
+2606,Hachette Savante,Hachette Savante,Draconiros,Il y'a 1 heures,7 500,-,-,8 993,-1 493,2606,2,31,05/04/2024 09:50
+2608,Francisque Basquaise,Francisque Basquaise,Draconiros,Il y'a 1 heures,59 998,-,-,39 637,+ 20 361,2608,2,99,31/03/2024 03:02
+2612,Vouge à Poisson,Vouge à Poisson,Draconiros,Il y'a 1 heures,24 998,-,-,18 343,+ 6 655,2612,2,45,05/04/2024 07:38
+2614,Hache de Dame Oise,Hache de Dame Oise,Draconiros,Il y'a 1 heures,35 500,-,-,28 373,+ 7 127,2614,2,46,09/04/2024 09:33
+2615,Hache de Lookabeer,Hache de Lookabeer,Draconiros,Il y'a 1 heures,11 400,-,-,8 495,+ 2 905,2615,2,23,11/04/2024 11:22
+2616,Halle de Barde,Halle de Barde,Draconiros,Il y'a 1 heures,42 000,-,-,48 726,-6 726,2616,2,103,29/03/2024 09:11
+2629,Caracape Minotoris,Caracape Minotoris,Draconiros,Il y'a 1 heures,44 999,-,-,55 965,-10 966,2629,2,49,01/04/2024 08:37
+2637,La Griffe,La Griffe,Draconiros,Il y'a 1 heures,3 788,-,-,2 605,+ 1 183,2637,2,107,10/04/2024 04:20
+2638,La Griffe Aiguisée,La Griffe Aiguisée,Draconiros,Il y'a 1 heures,22 900,-,-,24 417,-1 517,2638,2,112,08/04/2024 06:07
+2639,Fausse Griffe de Ceangal,Fausse Griffe de Ceangal,Draconiros,Il y'a 1 heures,38 999,-,-,42 905,-3 906,2639,2,107,10/04/2024 09:26
+2640,Bâton Carnivore,Bâton Carnivore,Draconiros,Il y'a 1 heures,2 787,-,-,2 295,+ 492,2640,2,43,02/04/2024 08:18
+2641,Toady,Toady,Draconiros,Il y'a 1 heures,4 000,-,-,6 170,-2 170,2641,2,132,26/03/2024 11:13
+2655,Ceinture Corbaquiale,Ceinture Corbaquiale,Draconiros,Il y'a 1 heures,300 000,-,-,53 985,+ 246 015,2655,2,22,09/04/2024 07:43
+2677,Ceinture Chouqueuse,Ceinture Chouqueuse,Draconiros,Il y'a 1 heures,29 455,-,-,31 943,-2 488,2677,2,85,09/04/2024 11:46
+2678,Ceinture Kokokette,Ceinture Kokokette,Draconiros,Il y'a 1 heures,49 976,-,-,11 377,+ 38 599,2678,2,259,06/04/2024 06:02
+2681,Ceinture Tortue Jaune,Ceinture Tortue Jaune,Draconiros,Il y'a 1 heures,28 000,-,-,28 585,-585,2681,2,120,21/03/2024 11:40
+2683,Ceinture Tortue Bleue,Ceinture Tortue Bleue,Draconiros,Il y'a 1 heures,13 800,-,-,12 986,+ 814,2683,2,96,10/04/2024 08:57
+2685,Ceinture Tortue Verte,Ceinture Tortue Verte,Draconiros,Il y'a 1 heures,27 000,-,-,17 643,+ 9 357,2685,2,125,09/04/2024 07:34
+2687,Ceinture Tortue Rouge,Ceinture Tortue Rouge,Draconiros,Il y'a 1 heures,27 889,-,-,23 039,+ 4 850,2687,2,124,09/04/2024 07:23
+2688,Ceinture Kolante,Ceinture Kolante,Draconiros,Il y'a 1 heures,8 500,-,-,4 952,+ 3 548,2688,2,51,07/04/2024 09:53
+2689,Ceinture Banisation,Ceinture Banisation,Draconiros,Il y'a 1 heures,1 900,-,-,796,+ 1 104,2689,2,23,03/04/2024 06:49
+2710,Ceinture Banisation Sauvage,Ceinture Banisation Sauvage,Draconiros,Il y'a 1 heures,6 000,-,-,2 739,+ 3 261,2710,2,87,04/04/2024 09:49
+2803,Ceinture du Kwabe,Ceinture du Kwabe,Draconiros,Il y'a 1 heures,1 295,-,-,1 335,-40,2803,2,228,09/04/2024 11:06
+2804,Ceinture Mulante,Ceinture Mulante,Draconiros,Il y'a 1 heures,56 999,-,-,38 579,+ 18 420,2804,2,144,07/04/2024 08:46
+2807,Ceinture Meulante,Ceinture Meulante,Draconiros,Il y'a 1 heures,84 000,-,-,80 632,+ 3 368,2807,2,65,09/04/2024 05:12
+2808,Ceinture Dracochoune,Ceinture Dracochoune,Draconiros,Il y'a 1 heures,12 000,-,-,13 882,-1 882,2808,2,52,09/04/2024 08:28
+2809,Ceinture Chafeuse,Ceinture Chafeuse,Draconiros,Il y'a 1 heures,33 000,-,-,28 715,+ 4 285,2809,2,267,05/04/2024 04:18
+2810,Ceinture Piquante,Ceinture Piquante,Draconiros,Il y'a 1 heures,1 570,-,-,619,+ 951,2810,2,26,04/04/2024 08:44
+2811,Ceinture Ouginakale,Ceinture Ouginakale,Draconiros,Il y'a 1 heures,38 998,-,-,25 154,+ 13 844,2811,2,132,11/04/2024 09:10
+3203,Anneau Tribal,Anneau Tribal,Draconiros,Il y'a 1 heures,25 000,-,-,13 465,+ 11 535,3203,2,159,11/03/2024 08:56
+3204,Ceinture Bontarienne,Ceinture Bontarienne,Draconiros,Il y'a 1 heures,33 999,-,-,20 578,+ 13 421,3204,2,201,10/04/2024 12:22
+3205,Ceinture Brâkmarienne,Ceinture Brâkmarienne,Draconiros,Il y'a 1 heures,34 898,-,-,36 184,-1 286,3205,2,265,03/04/2024 10:31
+3206,La Xerbo,La Xerbo,Draconiros,Il y'a 1 heures,41 979,-,-,26 442,+ 15 537,3206,2,143,10/04/2024 05:23
+3207,Bottes de Satisfaction,Bottes de Satisfaction,Draconiros,Il y'a 1 heures,4 499,-,-,771,+ 3 728,3207,2,13,30/03/2024 11:38
+3356,Pelle Doudesque,Pelle Doudesque,Draconiros,Il y'a 1 heures,16 999,-,-,8 698,+ 8 301,3356,2,66,11/04/2024 11:57
+3357,Marteau Tape Doigts,Marteau Tape Doigts,Draconiros,Il y'a 1 heures,19 851,-,-,12 767,+ 7 084,3357,2,149,08/04/2024 09:57
+3647,La Thor-Boyaux,La Thor-Boyaux,Draconiros,Il y'a 1 heures,53 990,-,-,41 911,+ 12 079,3647,2,140,06/04/2024 06:51
+3648,Daguette du Captain Chafer,Daguette du Captain Chafer,Draconiros,Il y'a 1 heures,49 500,-,-,39 896,+ 9 604,3648,2,116,24/03/2024 03:53
+3649,Dague Rafeuse,Dague Rafeuse,Draconiros,Il y'a 1 heures,35 000,-,-,37 341,-2 341,3649,2,145,11/04/2024 11:46
+3650,Dague Régah,Dague Régah,Draconiros,Il y'a 1 heures,84 999,-,-,110 398,-25 399,3650,2,116,04/04/2024 08:04
+3651,Dague Lutination,Dague Lutination,Draconiros,Il y'a 1 heures,35 283,-,-,38 935,-3 652,3651,2,99,07/04/2024 09:19
+3652,Bâton de Marie Aigue,Bâton de Marie Aigue,Draconiros,Il y'a 1 heures,72 900,-,-,107 637,-34 737,3652,2,150,11/04/2024 09:29
+4241,Griffe Rose,Griffe Rose,Draconiros,Il y'a 1 heures,93 000,-,-,72 575,+ 20 425,4241,2,159,09/04/2024 10:23
+4242,Eventail Tranchant,Eventail Tranchant,Draconiros,Il y'a 1 heures,16 999,-,-,15 938,+ 1 061,4242,2,88,05/04/2024 09:20
+4381,Amulette Argie,Amulette Argie,Draconiros,Il y'a 1 heures,44 999,-,-,31 772,+ 13 227,4381,2,106,10/04/2024 05:01
+4382,Pic à Glace,Pic à Glace,Draconiros,Il y'a 1 heures,36 499,-,-,52 056,-15 557,4382,2,40,09/04/2024 11:00
+4684,Amulette du Craqueleur des Plaines,Amulette du Craqueleur des Plaines,Draconiros,Il y'a 1 heures,17 896,-,-,9 110,+ 8 786,4684,2,68,08/03/2024 10:50
+5122,La Maîtrise des Poupées,La Maîtrise des Poupées,Draconiros,Il y'a 1 heures,21 000,-,-,20 399,+ 601,5122,2,35,09/04/2024 12:03

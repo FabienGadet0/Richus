@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "dof"
+version = "0.1.0"
+description = ""
+authors = ["Fabien Gadet <fabiengadet@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+selenium = "^4.19.0"
+pip = "^24.0"
+undetected-chromedriver = "^3.5.5"
+selenium-stealth = "^1.0.6"
+pandas = "^2.2.1"
+bs4 = "^0.0.2"
+lxml = "^5.2.1"
+html5lib = "^1.1"
+libsql-experimental = "^0.0.34"
+requests = "^2.31.0"
+fake-useragent = "^1.5.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+# generators (order matters)
+# get ids and item name from dofusdb to csv
+generate_item_ids_mapping = "src.generators.generate_item_ids_mapping:main"
+# generate from brifus brisage coeff
+generate_brisage_coeff = "src.generators.generate_brisage_coeff:main"
+# Parse the html from vulbis.com to generate a csv with all hdv prices
+generate_hdv_prices = "src.generators.generate_hdv_prices:main"
+# merge it all together
+merge_hdv_brisage_ids = "src.generators.merge_all:merge_hdv_brisage_ids"
+# generate runes from brifus needed for each item ids in the merged hdv file
+generate_runes = "src.generators.generate_runes:main"
