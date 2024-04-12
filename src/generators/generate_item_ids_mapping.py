@@ -9,16 +9,17 @@ from fake_useragent import UserAgent
 ua = UserAgent()
 lock = Lock()
 
+headers = {'User-Agent': ua.random}
+
 
 def download_item_data(item_id,  base_url="https://api.dofusdb.fr/items/"):
     """Downloads item data from the API and saves it to CSV."""
 
     url = f"{base_url}{item_id}?lang=fr"
-    headers = {'User-Agent': ua.random}
     try:
         # Send an HTTP GET request with a random delay (0.1-0.5 seconds) to avoid overwhelming the server
         time.sleep(random.uniform(0.1, 0.5))
-        response = requests.get(url, headers)
+        response = requests.get(url, headers=headers)
 
         # Check for successful response
         if response.status_code != 200:
@@ -35,13 +36,14 @@ def download_item_data(item_id,  base_url="https://api.dofusdb.fr/items/"):
 
     try:
         # Parse the JSON data from the response
-        item_data = json.loads(response.text)
+        item_data = response.json()
 
         # Extract desired information, skipping item with ID 666
+
         if item_data["id"] != 666:
             item_dict = {"id": item_data["id"],
                          "name": item_data["name"]["fr"], "level": item_data["level"],
-                         "type": item_data["superType"]["name"]["fr"]}
+                         "type": item_data["type"]["name"]["fr"]}
 
             with lock:  # Thread-safe access to CSV file
                 with open("data/bronze/item_ids_matching.csv", "a+", newline="") as csvfile:
