@@ -46,7 +46,7 @@ def download_item_data(item_id,  base_url="https://api.dofusdb.fr/items/"):
                          "type": item_data["type"]["name"]["fr"]}
 
             with lock:  # Thread-safe access to CSV file
-                with open("data/bronze/item_ids_matching.csv", "a+", newline="") as csvfile:
+                with open("data/bronze/items.csv", "a+", newline="") as csvfile:
                     # print("hello wassup")
                     writer = csv.DictWriter(csvfile, fieldnames=[
                                             "id", "name", "level", "type"])
