@@ -19,6 +19,7 @@ html5lib = "^1.1"
 libsql-experimental = "^0.0.34"
 requests = "^2.31.0"
 fake-useragent = "^1.5.1"
+sqlalchemy-libsql = "^0.1.0"
 
 
 [build-system]
@@ -27,13 +28,19 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 # generators (order matters)
+# Only needed once to initialize
 # get ids and item name from dofusdb to csv
-generate_item_ids_mapping = "src.generators.generate_item_ids_mapping:main"
+generate_item_ids_mapping = "src.generators.runOnce.generate_item_ids_mapping:main"
+# generate runes from brifus needed for each item ids in item_ids_matching
+generate_runes = "src.generators.runOnce.generate_runes:main"
 # generate from brifus brisage coeff
-generate_brisage_coeff = "src.generators.generate_brisage_coeff:main"
+generate_brisage_coeff = "src.generators.generate_brisage_coeff:initial_dump"
 # Parse the html from vulbis.com to generate a csv with all hdv prices
 generate_hdv_prices = "src.generators.generate_hdv_prices:main"
 # merge it all together
 merge_hdv_brisage_ids = "src.generators.merge_all:merge_hdv_brisage_ids"
-# generate runes from brifus needed for each item ids in the merged hdv file
-generate_runes = "src.generators.generate_runes:main"
+
+update_daily_coeff = "src.generators.generate_brisage_coeff:daily"
+
+
+insert_to_db = "src.db.insert_to_db:main"
