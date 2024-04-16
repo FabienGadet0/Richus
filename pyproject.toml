@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{ include = "src" }]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<3.13"
 selenium = "^4.19.0"
 pip = "^24.0"
 undetected-chromedriver = "^3.5.5"
@@ -20,6 +20,8 @@ libsql-experimental = "^0.0.34"
 requests = "^2.31.0"
 fake-useragent = "^1.5.1"
 sqlalchemy-libsql = "^0.1.0"
+dagster = "^1.7.1"
+dagster-webserver = "^1.7.1"
 
 
 [build-system]
@@ -33,14 +35,19 @@ build-backend = "poetry.core.masonry.api"
 generate_item_ids_mapping = "src.generators.runOnce.generate_item_ids_mapping:main"
 # generate runes from brifus needed for each item ids in item_ids_matching
 generate_runes = "src.generators.runOnce.generate_runes:main"
+
 # generate from brifus brisage coeff
 generate_brisage_coeff = "src.generators.generate_brisage_coeff:initial_dump"
 # Parse the html from vulbis.com to generate a csv with all hdv prices
 generate_hdv_prices = "src.generators.generate_hdv_prices:main"
-# merge it all together
-merge_hdv_brisage_ids = "src.generators.merge_all:merge_hdv_brisage_ids"
 
-update_daily_coeff = "src.generators.generate_brisage_coeff:daily"
-
-
+# update_daily_coeff = "src.generators.generate_brisage_coeff:daily"
 insert_to_db = "src.db.insert_to_db:main"
+
+# Ensure that all tables are already setup before
+rune_calculations = "src.transform.rune_calculations:main"
+
+create_runes_mapping = "src.transform.rune_pricing:create_mapping"
+
+[virtualenvs]
+in-project = true

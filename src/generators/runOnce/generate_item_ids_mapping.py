@@ -41,7 +41,7 @@ def download_item_data(item_id,  base_url="https://api.dofusdb.fr/items/"):
         # Extract desired information, skipping item with ID 666
 
         if item_data["id"] != 666:
-            item_dict = {"id": item_data["id"],
+            item_dict = {"item_id": item_data["id"],
                          "name": item_data["name"]["fr"], "level": item_data["level"],
                          "type": item_data["type"]["name"]["fr"]}
 

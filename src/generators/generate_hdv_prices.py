@@ -43,20 +43,21 @@ def parse_html_to_csv():
     df = pd.DataFrame(data, columns=headers)
     df.dropna(axis=1, how='all', inplace=True)
     file_name= "data/bronze/no_id_hdv_prices.csv"
+    df.rename(columns={'id': 'item_id'}, inplace=True)
+    df.dropna(axis=1, how='all', inplace=True)
     df.to_csv(file_name, index=False)
     print(f"{file_name} saved , total rows : {df.shape}")
 
 def merge_hdv_id():
     df1 = pd.read_csv("data/bronze/items.csv")
     df2 = pd.read_csv("data/bronze/no_id_hdv_prices.csv")
-    # df3 = pd.read_csv("data/bronze/brisage_coeff.csv")
 
     # Merge the two dataframes on the "name" column
     merged_df = pd.merge(df1, df2, left_on="name",right_on="Nom de l'objet", how='inner')
 
    # Clean
     merged_df = merged_df.drop_duplicates()
-    merged_df = merged_df[merged_df["id"] != 666]
+    merged_df = merged_df[merged_df["item_id"] != 666]
     merged_df.dropna(axis=1, inplace=True)
 
 

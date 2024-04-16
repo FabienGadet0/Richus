@@ -1,4 +1,4 @@
-id,name,level,type,Nom de l'objet,Serveur,Actualisation,Lot [1],Lot [10],Lot [100],Craft,Gain
+item_id,name,level,type,Nom de l'objet,Serveur,Actualisation,Lot [1],Lot [10],Lot [100],Craft,Gain
 49,Épée de Fouraille,15,Épée,Épée de Fouraille,Draconiros,Il y'a 1 heures,1 400,-,-,437,+ 963
 58,La Triste Lame,21,Épée,La Triste Lame,Draconiros,Il y'a 1 heures,5 000,-,-,4 017,+ 983
 44,Épée de Boisaille,7,Épée,Épée de Boisaille,Draconiros,Il y'a 1 heures,2 459,24 498,-,2 433,+ 26

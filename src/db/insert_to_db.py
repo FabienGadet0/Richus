@@ -2,25 +2,20 @@ import csv
 import pandas as pd
 import sqlalchemy as sa
 import os
-import dotenv
+from src.db.db import create_connector
 
-dotenv.config()
 
-DATABASE_HOST_NAME = os.environ.get("DATABASE_HOST_NAME")
-AUTH_TOKEN = os.environ.get("AUTH_TOKEN")
-CONN_URL = f"sqlite+libsql://{DATABASE_HOST_NAME}/?authToken={AUTH_TOKEN}&secure=true"
-
-# this replace everything , so use it only for initial dump
+# this replace everything
 def insert_csv_to_db_initial_dump(csv_file_path, table_name):
-    engine = sa.create_engine(CONN_URL)
+    engine = create_connector()
     df = pd.read_csv(csv_file_path)
-    try:
-        df.to_sql(name=table_name, con=engine, if_exists='replace', index=False)
-    except Exception as e:
-        engine.execute(f"ROLLBACK")
-        print(f"Error inserting data from {csv_file_path} into {table_name}: {e}")
-    else:
-        print(f"Data from {csv_file_path} inserted into {table_name} table. {df.shape} length")
+    with engine.begin() as connection:
+        try:
+            df.to_sql(name=table_name, con=connection, if_exists='replace', index=False)
+        except Exception as e:
+            print(f"Error inserting data from {csv_file_path} into {table_name}: {e}")
+            return
+    print(f"Data from {csv_file_path} inserted into {table_name} [LOCAL : {os.environ.get("IS_LOCAL")}] . {df.shape} rows")
 
 def import_to_db_from_csv():
     data_directory = "data"

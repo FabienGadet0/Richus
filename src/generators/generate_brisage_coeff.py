@@ -69,7 +69,7 @@ def initial_dump():
     data_dir = "data/silver"
     os.makedirs(data_dir, exist_ok=True)
 
-    df = pd.read_csv("data/silver/id_hdv_prices.csv")
+    df = pd.read_csv("data/silver/hdv_prices.csv")
     get_brisage_coeff_for_ids(2, df['id'].tolist())
 
 def daily():
