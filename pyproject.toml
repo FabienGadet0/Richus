@@ -22,6 +22,8 @@ fake-useragent = "^1.5.1"
 sqlalchemy-libsql = "^0.1.0"
 dagster = "^1.7.1"
 dagster-webserver = "^1.7.1"
+psycopg2-binary = "^2.9.9"
+pytz = "^2024.1"
 
 
 [build-system]
@@ -29,25 +31,22 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-# generators (order matters)
-# Only needed once to initialize
+# ----------------------------- Init ---------------------------------------
 # get ids and item name from dofusdb to csv
 generate_item_ids_mapping = "src.generators.runOnce.generate_item_ids_mapping:main"
 # generate runes from brifus needed for each item ids in item_ids_matching
 generate_runes = "src.generators.runOnce.generate_runes:main"
-
+# ---------------------------------------------------------------------------
+# ------------------------------ Daily data ---------------------------------
 # generate from brifus brisage coeff
 generate_brisage_coeff = "src.generators.generate_brisage_coeff:initial_dump"
 # Parse the html from vulbis.com to generate a csv with all hdv prices
 generate_hdv_prices = "src.generators.generate_hdv_prices:main"
-
 # update_daily_coeff = "src.generators.generate_brisage_coeff:daily"
 insert_to_db = "src.db.insert_to_db:main"
-
+# ---------------------------------------------------------------------------
+# ------------------------------ Transforms ---------------------------------
 # Ensure that all tables are already setup before
 rune_calculations = "src.transform.rune_calculations:main"
-
-create_runes_mapping = "src.transform.rune_pricing:create_mapping"
-
-[virtualenvs]
-in-project = true
+create_runes_mapping = "src.generators.create_rune_mapping:main"
+rune_pricing = "src.transform.rune_pricing:main"

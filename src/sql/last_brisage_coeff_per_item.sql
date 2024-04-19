@@ -3,8 +3,8 @@ WITH RankedCoefficients AS (
         item_id,
         server_id,
         coefficient,
-        dateTime,
-        ROW_NUMBER() OVER (PARTITION BY item_id ORDER BY dateTime DESC) AS rn
+        last_updated,
+        ROW_NUMBER() OVER (PARTITION BY item_id ORDER BY last_updated DESC) AS rn
     FROM
         bronze_brisage_coeff_history
 )

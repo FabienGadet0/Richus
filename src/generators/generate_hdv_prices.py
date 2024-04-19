@@ -1,50 +1,30 @@
 import pandas as pd
 from bs4 import BeautifulSoup
+import re
+import pytz
+from datetime import datetime
 
-HTML_FILE_PATH = 'data/raw/a.html'
+HTML_FILE_PATH = 'data/raw/b.html'
 
 
 def parse_html_to_csv():
+    # Use pandas to directly read tables from the HTML file
+    tables = pd.read_html(HTML_FILE_PATH, encoding='utf-8')
 
-    # Open the HTML file
-    with open(HTML_FILE_PATH, 'r') as f:
-        html_content = f.read()
+    # Assume the table with ID 'scanTable' is the first table
+    df = tables[0]
 
-    # Parse the HTML using BeautifulSoup
-    soup = BeautifulSoup(html_content, 'html.parser')
-
-    # Find the table with ID 'scanTable'
-    table = soup.find('table', id='scanTable')
-
-    # Extract table headers (assuming they're in the first 'tr' element within 'thead')
-    headers = [th.text.strip()
-               for th in table.find('thead').find('tr').find_all('th')]
-
-    # Extract table data (excluding header row)
-    from concurrent.futures import ThreadPoolExecutor
-
-    def extract_row_data(row):
-        row_data = []
-        for td in row.find_all('td'):
-            text = td.text.strip() if td.text else None  # Handle empty cells
-            if td.find('p'):
-                # Extract text from nested paragraphs
-                text = td.find('p').text.strip()
-            row_data.append(text)
-        return row_data
-
-    data = []
-    with ThreadPoolExecutor(max_workers=20) as executor:
-        futures = [executor.submit(extract_row_data, row) for row in table.find('tbody').find_all('tr')]
-        for future in futures:
-            data.append(future.result())
-
-    # Create the DataFrame
-    df = pd.DataFrame(data, columns=headers)
     df.dropna(axis=1, how='all', inplace=True)
     file_name= "data/bronze/no_id_hdv_prices.csv"
-    df.rename(columns={'id': 'item_id'}, inplace=True)
+    df.rename(columns={'id': 'item_id',"Nom de l'objet":"nom_de_lobjet"}, inplace=True)
+    df['nom_de_lobjet'] = df['nom_de_lobjet'].str.extract(r'^(.+?)\s*\[')
+    df['nom_de_lobjet'] = df['nom_de_lobjet'].str.strip()
+    df['Lot [1]'] = df['Lot [1]'].str.replace('\u2006','')
+    df['Lot [10]'] = df['Lot [10]'].str.replace('\u2006','')
+    df['Lot [100]'] = df['Lot [100]'].str.replace('\u2006','')
     df.dropna(axis=1, how='all', inplace=True)
+
+    df['last_updated_fr'] = datetime.now(pytz.timezone('Europe/Paris')).strftime('%Y-%m-%d %H:%M:%S')
     df.to_csv(file_name, index=False)
     print(f"{file_name} saved , total rows : {df.shape}")
 
@@ -53,7 +33,7 @@ def merge_hdv_id():
     df2 = pd.read_csv("data/bronze/no_id_hdv_prices.csv")
 
     # Merge the two dataframes on the "name" column
-    merged_df = pd.merge(df1, df2, left_on="name",right_on="Nom de l'objet", how='inner')
+    merged_df = pd.merge(df1, df2, left_on="name",right_on="nom_de_lobjet", how='inner')
 
    # Clean
     merged_df = merged_df.drop_duplicates()
