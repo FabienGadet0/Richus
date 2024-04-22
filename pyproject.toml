@@ -50,6 +50,6 @@ insert_to_db = "src.db.insert_to_db:main"
 rune_calculations = "src.transform.rune_calculations:main"
 create_runes_mapping = "src.generators.create_rune_mapping:main"
 rune_pricing = "src.transform.rune_pricing:main"
-
+create_view_price_brisage = "src.transform.rune_price_brisage_together:main"
 
 init = "src.init_local:main"

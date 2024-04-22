@@ -4,7 +4,7 @@ import re
 import pytz
 from datetime import datetime
 
-HTML_FILE_PATH = 'data/raw/b.html'
+HTML_FILE_PATH = 'data/raw/c.html'
 
 
 def parse_html_to_csv():
@@ -17,8 +17,14 @@ def parse_html_to_csv():
     df.dropna(axis=1, how='all', inplace=True)
     file_name= "data/bronze/no_id_hdv_prices.csv"
     df.rename(columns={'id': 'item_id',"Nom de l'objet":"nom_de_lobjet"}, inplace=True)
+
     df['nom_de_lobjet'] = df['nom_de_lobjet'].str.extract(r'^(.+?)\s*\[')
     df['nom_de_lobjet'] = df['nom_de_lobjet'].str.strip()
+
+    df['Craft'] = df['Craft'].str.extract(r':\s*(.*)')
+    df['Craft'] = df['Craft'].str.replace('\u2006','')
+    df['Craft'] = df['Craft'].str.strip()
+
     df['Lot [1]'] = df['Lot [1]'].str.replace('\u2006','')
     df['Lot [10]'] = df['Lot [10]'].str.replace('\u2006','')
     df['Lot [100]'] = df['Lot [100]'].str.replace('\u2006','')
@@ -38,7 +44,7 @@ def merge_hdv_id():
    # Clean
     merged_df = merged_df.drop_duplicates()
     merged_df = merged_df[merged_df["item_id"] != 666]
-    merged_df.dropna(axis=1, inplace=True)
+    # merged_df.dropna(axis=1, inplace=True)
 
 
     # Save the merged dataframe to a CSV file

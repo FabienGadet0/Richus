@@ -24,6 +24,7 @@ def download_brisage_history(server_id, item_id):
             df.rename(columns={'item': 'item_id','server':'server_id','dateTime':'last_updated','datetime':'last_updated'}, inplace=True)
             df['last_updated'] = pd.to_datetime(df['last_updated'], format='%d/%m/%Y %H:%M')
             df['last_updated'] = df['last_updated'].dt.strftime('%m/%d/%Y %H:%M')
+            df['last_updated'] = pd.to_datetime(df['last_updated'], format='%m/%d/%Y %H:%M')
 
             # check if file exist
             file_exist = os.path.isfile("data/bronze/brisage_coeff_history.csv")
@@ -39,7 +40,7 @@ def download_brisage_history(server_id, item_id):
 def get_brisage_coeff_for_ids(server_id, item_ids):
     """Multithreaded execution for downloading item stats."""
 
-    max_threads = len(item_ids) if len(item_ids) < 10 else 10
+    max_threads = len(item_ids) if len(item_ids) < 20 else 20
     is_first = True
     # item_ids = ids
 
@@ -76,7 +77,8 @@ def initial_dump():
     os.makedirs(data_dir, exist_ok=True)
 
     df = pd.read_csv("data/silver/hdv_prices.csv")
-    get_brisage_coeff_for_ids(2, df['item_id'].tolist())
+    # draco -> 2 , hell mina -> 5
+    get_brisage_coeff_for_ids(5, df['item_id'].tolist())
 
 def daily():
     print("todo")

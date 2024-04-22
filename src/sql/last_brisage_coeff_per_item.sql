@@ -10,7 +10,8 @@ WITH RankedCoefficients AS (
 )
 SELECT
     item_id,
-    coefficient
+    coefficient,
+    last_updated as rune_last_update
 FROM
     RankedCoefficients
 WHERE

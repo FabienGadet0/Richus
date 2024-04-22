@@ -17,7 +17,7 @@ def main():
         df_item_runes_filtered.drop(columns=["min","max"],inplace=True)
         df_final = pd.merge(df_item_runes_filtered, df_items[['item_id', 'level']], on="item_id")
         df_final.drop_duplicates(inplace=True)
-        df_final = pd.merge(df_final, df_brisage_coeff[['item_id', 'coefficient']], on="item_id")
+        df_final = pd.merge(df_final, df_brisage_coeff[['item_id', 'coefficient','rune_last_update']], on="item_id")
         df_final.drop_duplicates(inplace=True)
 
         # Poids de brisage
