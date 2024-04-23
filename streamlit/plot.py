@@ -26,18 +26,6 @@ if 'first_load' not in st.session_state:
 else:
     df = get_csv(dl=False)
 
-b.name as nom_objet,
-b.type as type_objet,
-b.level as objet_level,
-m.name as focus_rune_nom,
-m.coefficient,
-s."Lot [1]" as prix,
-s."Craft" as craft,
-g.rune_last_update,
-s.last_updated_fr as hdv_last_update,
-m.focus_profitability as focus_rentabilite,
-
-
 df1 = df.copy()
 df = df[['item_id', 'nom_objet', 'meilleur_renta',
          'meilleur_renta_percent', 'meilleur_renta_valeur', 'coefficient', 'rune_last_update', 'hdv_last_update', 'type_objet', 'objet_level']]
