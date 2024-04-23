@@ -17,7 +17,7 @@ def generate_brisage_coeff():
 def generate_hdv_prices():
     generate_hdv_prices_func.main()
 
-@asset(group_name="initialisation",deps=[generate_item_ids_mapping,generate_hdv_prices])
+@asset(group_name="initialisation",deps=[generate_hdv_prices])
 def generate_runes():
     generate_runes_func.main()
 
@@ -26,11 +26,11 @@ def create_runes_mapping():
     create_rune_mapping_func.main()
 
 
-@asset(group_name="daily_update", deps=[generate_brisage_coeff,generate_hdv_prices])
+@asset(group_name="daily_update", deps=[generate_hdv_prices])
 def insert_to_db():
     insert_to_db_func.main()
 
-@asset(group_name="daily_update",deps=[generate_brisage_coeff,generate_hdv_prices,insert_to_db])
+@asset(group_name="daily_update",deps=[generate_hdv_prices,insert_to_db])
 def rune_calculations():
     rune_calculations_func.main()
 

@@ -23,8 +23,7 @@ def main():
         # Poids de brisage
         df_final["pdb"] = 3 * df_final["jet"] * df_final["rune_weight"] * df_final["level"] / 200 +1
 
-        # if negative then /10
-        df_final["pdb"] = df_final.apply(lambda row: row["pdb"] / 10 if row["jet"] < 0 else row["pdb"], axis=1)
+        df_final["pdb"] = df_final["pdb"].apply(lambda x: 0 if x < 0 else x)
 
         # round
         # df_final["pdb"] = df_final["pdb"].apply(lambda x: np.ceil(x * 10) / 10 if x > 0 else 0)
@@ -38,16 +37,20 @@ def main():
 
         def calculate_focus_runes_qty(row, grouped_df):
             current_pdb = row['pdb']
-            other_pdb = grouped_df.get_group(row['item_id'])['pdb'].sum() - current_pdb
-            focus_runes_qty = (other_pdb * 0.5) + (current_pdb)
+            focus_runes_qty = 0
+            if current_pdb != 0:
+                other_pdb = grouped_df.get_group(row['item_id'])['pdb'].apply(lambda x: x  if x < 0 else x).sum() - current_pdb
+                focus_runes_qty = (other_pdb * 0.5) + (current_pdb)
             return focus_runes_qty
 
         df_final.drop_duplicates(inplace=True)
         grouped_by_item_id = df_final.groupby('item_id')
         df_final['focus_runes_qty'] = df_final.apply(lambda row:
-            (calculate_focus_runes_qty(row, grouped_by_item_id)/ row["rune_weight"]) * (row["coefficient"] / 100), axis=1)
+                    (calculate_focus_runes_qty(row, grouped_by_item_id) / row["rune_weight"] if row["rune_weight"] > 1 else calculate_focus_runes_qty(row, grouped_by_item_id)), axis=1)
 
         df_final.drop_duplicates(inplace=True)
+        for col in df_final.select_dtypes(include=['float']).columns:
+            df_final[col] = df_final[col].round(1)
         batch_insert_to_db(df_final,"silver_runes_pdb_focus")
     except Exception as e:
         print(f"Error during processing or inserting data: {e}")

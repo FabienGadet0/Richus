@@ -24,6 +24,7 @@ dagster = "^1.7.1"
 dagster-webserver = "^1.7.1"
 psycopg2-binary = "^2.9.9"
 pytz = "^2024.1"
+streamlit = "^1.33.0"
 
 
 [build-system]

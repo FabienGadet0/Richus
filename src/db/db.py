@@ -2,13 +2,19 @@ import sqlalchemy as sa
 import os
 from concurrent.futures import ThreadPoolExecutor
 import pandas as pd
+from dotenv import load_dotenv
+
+load_dotenv()
+
+MAX_WORKER = 1
 
 def create_connector(is_local : bool = os.environ.get("IS_LOCAL") == "True"):
     DATABASE_HOST_NAME = os.environ.get("DATABASE_HOST_NAME")
     DATABASE_HOST_NAME_LOCAL = os.environ.get("DATABASE_HOST_NAME_LOCAL")
     AUTH_TOKEN = os.environ.get("AUTH_TOKEN")
     # CONN_URL = DATABASE_HOST_NAME_LOCAL if is_local  else f"sqlite+libsql://{DATABASE_HOST_NAME}/?authToken={AUTH_TOKEN}&secure=true"
-    CONN_URL = f"postgresql+psycopg2://postgres:1@localhost:5432/postgres"
+    # CONN_URL = f"postgresql+psycopg2://postgres:1@localhost:5432/postgres"
+    CONN_URL = os.environ.get("CONN_URL")
     return sa.create_engine(CONN_URL)
 
 
@@ -26,7 +32,7 @@ def fetch_all_data_from_query(query_file, limit=3000):
     offset = 0
 
     while True:
-        with ThreadPoolExecutor(max_workers=3) as executor:
+        with ThreadPoolExecutor(max_workers=MAX_WORKER) as executor:
             futures = []
             # Spawn a new set of futures.
             for _ in range(3):
@@ -72,7 +78,7 @@ def fetch_all_data(table_name,limit=3000):
     offset = 0
 
     while True:
-        with ThreadPoolExecutor(max_workers=3) as executor:
+        with ThreadPoolExecutor(max_workers=MAX_WORKER) as executor:
             futures = []
             # Dynamically add futures for fetching data
             for _ in range(3):
@@ -114,7 +120,7 @@ def batch_insert_to_db(dataframe, table_name, date_columns=None):
             except Exception as e:
                 print(f"Failed to insert batch into {table_name}: {repr(e)}")
                 conn.close()
-                return
+                raise
             finally:
                 print(f"Data inserted to {table_name} {batch.shape}")
 
