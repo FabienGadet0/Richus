@@ -22,7 +22,7 @@ def get_csv(dl=False):
 
 if 'first_load' not in st.session_state:
     st.session_state['first_load'] = True
-    df = get_csv(dl=False)
+    df = get_csv(dl=True)
 else:
     df = get_csv(dl=False)
 
