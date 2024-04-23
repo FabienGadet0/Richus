@@ -22,7 +22,7 @@ def get_csv(dl=False):
 
 if 'first_load' not in st.session_state:
     st.session_state['first_load'] = True
-    df = get_csv(dl=True)
+    df = get_csv(dl=False)
 else:
     df = get_csv(dl=False)
 
@@ -32,16 +32,21 @@ df = df[['item_id', 'objet_type', 'objet_level', 'nom_objet', 'meilleur_renta',
 df1 = df1[['item_id', 'nom_objet', 'prix', 'craft',
            'focus_rentabilite', 'total_profit_non_focus']]
 
+df['meilleur_renta_valeur'] = df['meilleur_renta_valeur'].fillna(0)
+df['meilleur_renta_valeur'] = df['meilleur_renta_valeur'].astype(int)
+
+
 df['rune_last_update'] = pd.to_datetime(df['rune_last_update'])
 df['hdv_last_update'] = pd.to_datetime(df['hdv_last_update'])
 
-df['Rune derniere update'] = (
-    (datetime.now() - df['rune_last_update']).dt.total_seconds() / 3600).astype(int)
+df['coeff_derniere_update'] = (
+    (datetime.now() - df['rune_last_update']).dt.total_seconds() / 3600).fillna(0).astype(int)
 df.drop(columns=['rune_last_update'], inplace=True)
-df['HDV derniere update'] = (
-    (datetime.now() - df['hdv_last_update']).dt.total_seconds() / 3600).astype(int)
-df.drop(columns=['hdv_last_update'], inplace=True)
 
+df['hdv_derniere_update'] = (
+    (datetime.now() - df['hdv_last_update']).dt.total_seconds() / 3600).fillna(0).astype(int)
+df.drop(columns=['hdv_last_update'], inplace=True)
+# df['hdv_derniere_update'] = df['HDV derniere update'].fillna(0).astype(int)
 # Display title in Streamlit app
 st.markdown("<h1 style='text-align: center; color: #FFD700; font-size: 80px;'>Richus</h1>",
             unsafe_allow_html=True)
@@ -72,7 +77,7 @@ with col3:
         update_filter_options.keys()), key='update_filter')
 
 if update_filter_options[update_filter_choice]:
-    df = df[df['Derniere update'] <=
+    df = df[df['coeff_derniere_update'] <=
             update_filter_options[update_filter_choice]]
 
 with col4:
@@ -96,22 +101,34 @@ def highlight_renta_valeur(s):
     return ['background-color: #ffcccc; color:black' if val <= 0 else '' for val in s]
 
 
-df_styled = df.style.apply(highlight_update, subset=['Derniere update'])
+df_styled = df.style.apply(highlight_update, subset=['coeff_derniere_update'])
 df_styled = df_styled.apply(highlight_renta_valeur, subset=[
                             'meilleur_renta_valeur'])
 df_styled = df_styled.apply(highlight_renta_percent_high, subset=[
                             'meilleur_renta_percent'])
 
 df_styled = df_styled.format(
-    {col: "{:.1f}" for col in df.select_dtypes(include='float').columns})
+    {'coeff_derniere_update': lambda x: f"Il y a {x} heures"})
+#
+# df_styled = df_styled.format(
+#     {'hdv_derniere_update': lambda x: f"Il y a {x} heures"})
 
-df_styled = df_styled.format(
-    {'Derniere update': lambda x: f"Il y a {x} heures"})
 df['meilleur_renta_percent'] = df['meilleur_renta_percent'].astype(str) + '%'
+df['coefficient'] = df['coefficient'].astype(str) + '%'
+
 st.dataframe(df_styled, width=1000, height=600,
              hide_index=True, use_container_width=True)
 
 st.markdown("<h2 style='text-align: center; color: white;'>Prix</h2>",
             unsafe_allow_html=True)
+
+
+# df1['total_profit_non_focus'].fillna(0).astype(int)
+df1['total_profit_non_focus'] = df1['total_profit_non_focus'].fillna(
+    0).astype(int)
+df1['focus_rentabilite'] = df1['focus_rentabilite'].fillna(
+    0).astype(int)
+
+
 st.dataframe(df1, width=1000, height=600,
              hide_index=True, use_container_width=True)
