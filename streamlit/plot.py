@@ -27,15 +27,20 @@ else:
     df = get_csv(dl=False)
 
 df1 = df.copy()
-df = df[['item_id', 'nom_objet', 'meilleur_renta',
-         'meilleur_renta_percent', 'meilleur_renta_valeur', 'coefficient', 'rune_last_update', 'hdv_last_update', 'type_objet', 'objet_level']]
+df = df[['item_id', 'objet_type', 'objet_level', 'nom_objet', 'meilleur_renta',
+         'meilleur_renta_percent', 'meilleur_renta_valeur', 'coefficient', 'rune_last_update', 'hdv_last_update']]
 df1 = df1[['item_id', 'nom_objet', 'prix', 'craft',
            'focus_rentabilite', 'total_profit_non_focus']]
 
 df['rune_last_update'] = pd.to_datetime(df['rune_last_update'])
-df['Derniere update'] = (
+df['hdv_last_update'] = pd.to_datetime(df['hdv_last_update'])
+
+df['Rune derniere update'] = (
     (datetime.now() - df['rune_last_update']).dt.total_seconds() / 3600).astype(int)
 df.drop(columns=['rune_last_update'], inplace=True)
+df['HDV derniere update'] = (
+    (datetime.now() - df['hdv_last_update']).dt.total_seconds() / 3600).astype(int)
+df.drop(columns=['hdv_last_update'], inplace=True)
 
 # Display title in Streamlit app
 st.markdown("<h1 style='text-align: center; color: #FFD700; font-size: 80px;'>Richus</h1>",
@@ -96,8 +101,10 @@ df_styled = df_styled.apply(highlight_renta_valeur, subset=[
                             'meilleur_renta_valeur'])
 df_styled = df_styled.apply(highlight_renta_percent_high, subset=[
                             'meilleur_renta_percent'])
+
 df_styled = df_styled.format(
     {col: "{:.1f}" for col in df.select_dtypes(include='float').columns})
+
 df_styled = df_styled.format(
     {'Derniere update': lambda x: f"Il y a {x} heures"})
 df['meilleur_renta_percent'] = df['meilleur_renta_percent'].astype(str) + '%'

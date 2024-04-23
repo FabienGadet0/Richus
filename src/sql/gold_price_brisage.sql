@@ -10,7 +10,7 @@ from public.gold_item_rune_price g
 select
 g.item_id,
 b.name as nom_objet,
-b.type as type_objet,
+b.type as objet_type,
 b.level as objet_level,
 m.name as focus_rune_nom,
 m.coefficient,
