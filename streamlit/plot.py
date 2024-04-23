@@ -20,8 +20,11 @@ def get_csv(dl=False):
 # if st.button('Rafraichir les donnees'):
     # df = get_csv(dl=True)
 
-df = get_csv()
-
+if 'first_load' not in st.session_state:
+    st.session_state['first_load'] = True
+    df = get_csv(dl=True)
+else:
+    df = get_csv(dl=False)
 
 df1 = df.copy()
 df = df[['item_id', 'nom_objet', 'meilleur_renta', 'meilleur_renta_percent', 'meilleur_renta_valeur','rune_last_update']]
