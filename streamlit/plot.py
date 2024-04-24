@@ -6,24 +6,24 @@ import os
 
 st.set_page_config(layout="wide")
 
-def get_csv(dl=False):
+def get_data(file_name,dl=False):
     # Define file path
-    file_path = "streamlit/data/gold_price_brisage.csv"
     # Check if file exists
-    if os.path.exists(file_path) and not dl:
-        return pd.read_csv(file_path)
+    if os.path.exists(f"streamlit/data/{file_name}.csv") and not dl:
+        return pd.read_csv(f"streamlit/data/{file_name}.csv")
     else:
         # Fetch all data if file does not exist and save to CSV
-        df = fetch_all_data("gold_price_brisage")
-        df.to_csv(file_path, index=False)
+        df = fetch_all_data(file_name)
+        df.to_csv(file_name, index=False)
         return df
 
 
+first_load = 'first_load' not in st.session_state
 if 'first_load' not in st.session_state:
     st.session_state['first_load'] = True
-    df = get_csv(dl=True)
-else:
-    df = get_csv(dl=False)
+
+df = get_data("gold_price_brisage",dl=first_load)
+df_history = get_data("bronze_brisage_coeff_history",dl=first_load)
 
 df1 = df.copy()
 df = df[['item_id', 'objet_type', 'objet_level', 'nom_objet', 'meilleur_renta',
@@ -51,9 +51,9 @@ st.markdown("<h1 style='text-align: center; color: #FFD700; font-size: 80px;'>Ri
 st.markdown("&nbsp;")
 st.markdown("&nbsp;")
 st.markdown("&nbsp;")
+
 st.markdown("<h2 style='text-align: center; color: white;'>Résumé (Hell Mina)</h2>",
             unsafe_allow_html=True)
-
 st.sidebar.markdown("## Filtres")
 item_id_filter = st.sidebar.multiselect("ID de l'objet", options=sorted(list(df['item_id'].unique())), default=[], key='item_id_select')
 if item_id_filter:
@@ -137,11 +137,12 @@ df_styled = df.style.apply(
     [{'selector': 'th', 'props': [('background-color', '#4B5D67'), ('color', 'white'), ('text-align', 'center')]}]
 )
 
+
 st.dataframe(df_styled, width=1000, height=600,
              hide_index=True, use_container_width=True)
 
-st.markdown("<h2 style='text-align: center; color: white;'>Prix</h2>",
-            unsafe_allow_html=True)
+    # st.markdown("<h2 style='text-align: center; color: white;'>Prix</h2>",
+            # unsafe_allow_html=True)
 
 df1['total_profit_non_focus'] = df1['total_profit_non_focus'].fillna(
     0).astype(int)
@@ -152,7 +153,7 @@ df1.rename(columns=column_translations, inplace=True)
 
 df1_styled = df1.style.apply(
     lambda x: ['background-color: black']*len(x), axis=1
-).applymap(
+).map(
     lambda x: 'text-align: center;'
 ).format(
     {"Prix": lambda x: "{} K".format(x) if x != '' else '', "Prix de Craft": lambda x: "{} K".format(x) if x != '' else '', "Rentabilité Focus": lambda x: "{} K".format(x) if x != '' else '', "Profit Total": lambda x: "{} K".format(x) if x != '' else ''}
