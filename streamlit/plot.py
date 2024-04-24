@@ -6,7 +6,6 @@ import os
 
 st.set_page_config(layout="wide")
 
-
 def get_csv(dl=False):
     # Define file path
     file_path = "streamlit/data/gold_price_brisage.csv"
@@ -46,8 +45,7 @@ df.drop(columns=['rune_last_update'], inplace=True)
 df['hdv_derniere_update'] = (
     (datetime.now() - df['hdv_last_update']).dt.total_seconds() / 3600).fillna(0).astype(int)
 df.drop(columns=['hdv_last_update'], inplace=True)
-# df['hdv_derniere_update'] = df['HDV derniere update'].fillna(0).astype(int)
-# Display title in Streamlit app
+
 st.markdown("<h1 style='text-align: center; color: #FFD700; font-size: 80px;'>Richus</h1>",
             unsafe_allow_html=True)
 st.markdown("&nbsp;")
@@ -56,65 +54,88 @@ st.markdown("&nbsp;")
 st.markdown("<h2 style='text-align: center; color: white;'>Résumé (Hell Mina)</h2>",
             unsafe_allow_html=True)
 
-col1, col2, col3, col4 = st.columns(4)
-with col1:
-    item_id_filter = st.selectbox("ID de l'objet", options=[
-                                  'Tout'] + sorted(list(df['item_id'].unique())), key='item_id_select')
-if item_id_filter != 'Tout':
-    df = df[df['item_id'] == item_id_filter]
-    df1 = df1[df1['item_id'] == item_id_filter]
+st.sidebar.markdown("## Filtres")
+item_id_filter = st.sidebar.multiselect("ID de l'objet", options=sorted(list(df['item_id'].unique())), default=[], key='item_id_select')
+if item_id_filter:
+    df = df[df['item_id'].isin(item_id_filter)]
+    df1 = df1[df1['item_id'].isin(item_id_filter)]
 
-with col2:
-    name_filter = st.text_input("Nom de l'objet", key='nom_objet_filter')
+name_filter = st.sidebar.multiselect("Nom de l'objet", options=sorted(list(df['nom_objet'].unique())), default=[], key='nom_objet_filter')
 if name_filter:
-    df = df[df['nom_objet'].str.contains(name_filter, case=False)]
-    df1 = df1[df1['nom_objet'].str.contains(name_filter, case=False)]
+    df = df[df['nom_objet'].isin(name_filter)]
+    df1 = df1[df1['nom_objet'].isin(name_filter)]
 
-with col3:
-    update_filter_options = {'Tout': None, 'Moins d\'un jour': 24,
-                             'Moins d\'une semaine': 168, 'Moins d\'un mois': 720}
-    update_filter_choice = st.selectbox("Derniere update de la rune", options=list(
-        update_filter_options.keys()), key='update_filter')
+type_filter = st.sidebar.multiselect("Type de l'objet", options=sorted(list(df['objet_type'].unique())), default=[], key='type_objet_filter')
+if type_filter:
+    df = df[df['objet_type'].isin(type_filter)]
+
+update_filter_options = {'Tout': None,'Moins d\'un jour': 24, 'Moins d\'une semaine': 168, 'Moins d\'un mois': 720}
+update_filter_choice = st.sidebar.selectbox("Derniere update de la rune", options=list(update_filter_options.keys()), key='update_filter')
 
 if update_filter_options[update_filter_choice]:
     df = df[df['coeff_derniere_update'] <=
             update_filter_options[update_filter_choice]]
 
-with col4:
-    rentable_filter = st.selectbox(
-        "Seulement rentable", ['Non', 'Oui'], key='rentable_filter')
-if rentable_filter == 'Oui':
+rentable_filter = st.sidebar.checkbox("Seulement rentable", key='rentable_filter')
+if rentable_filter:
     df = df[df['meilleur_renta'] != 'non_rentable']
 
+coefficient_filter = st.sidebar.checkbox("Coefficient sous 1000", key='coefficient_filter')
+if coefficient_filter:
+    df = df[df['coefficient'].astype(float) < 1000]
 
 def highlight_renta_percent_high(s):
-    return ['background-color: lightgreen; color:black' if float(val.strip('%')) > 200 else '' for val in s]
-
-# Styling dataframe based on 'Derniere update' value and formatting float columns
-
-
-def highlight_update(s):
-    return ['background-color: lightgreen; color:black' if val <= 168 else '' for val in s]
+    return ['background-color: gold; color:black' if float(val) > 200 else '' for val in s]
 
 
 def highlight_renta_valeur(s):
     return ['background-color: #ffcccc; color:black' if val <= 0 else '' for val in s]
+def highlight_update(s):
+    return ['background-color: lightgreen; color:black' if val <= 96 else '' for val in s]
+
+def highlight_coefficient_above_average(s, avg):
+    return ['background-color: gold; color:black' if val > avg else '' for val in s]
+
+avg_coefficient = df['coefficient'].astype(float).mean()
 
 
-df_styled = df.style.apply(highlight_update, subset=['coeff_derniere_update'])
-df_styled = df_styled.apply(highlight_renta_valeur, subset=[
-                            'meilleur_renta_valeur'])
-df_styled = df_styled.apply(highlight_renta_percent_high, subset=[
-                            'meilleur_renta_percent'])
+column_translations = {
+    "item_id": "ID",
+    "objet_type": "Type",
+    "objet_level": "Niveau",
+    "nom_objet": "Nom",
+    "meilleur_renta": "Meilleur methode",
+    "meilleur_renta_percent": "% Rentabilité",
+    "meilleur_renta_valeur": "Valeur Rentabilité",
+    "coefficient": "Coeff",
+    "coeff_derniere_update": "MàJ Coeff",
+    "hdv_derniere_update": "MàJ HDV",
+    "prix": "Prix",
+    "craft": "Prix de Craft",
+    "focus_rentabilite": "Rentabilité Focus",
+    "total_profit_non_focus": "Profit Total"
+}
 
-df_styled = df_styled.format(
-    {'coeff_derniere_update': lambda x: f"Il y a {x} heures"})
-#
-# df_styled = df_styled.format(
-#     {'hdv_derniere_update': lambda x: f"Il y a {x} heures"})
-
-df['meilleur_renta_percent'] = df['meilleur_renta_percent'].astype(str) + '%'
-df['coefficient'] = df['coefficient'].astype(str) + '%'
+df.rename(columns=column_translations, inplace=True)
+df_styled = df.style.apply(
+    lambda x: ['background-color: black']*len(x), axis=1
+).applymap(
+    lambda x: 'text-align: center;'
+).apply(
+    highlight_update, subset=["MàJ Coeff"]
+).apply(
+    highlight_renta_valeur, subset=["Valeur Rentabilité"]
+).apply(
+    highlight_renta_percent_high, subset=["% Rentabilité"]
+).apply(
+    lambda x: highlight_coefficient_above_average(x, avg_coefficient), subset=["Coeff"]
+).format(
+    {"% Rentabilité": lambda x: "{:.0f} %".format(x) if x != '' else '', "Coeff": lambda x: "{:.0f} %".format(x) if x != '' else '', "Valeur Rentabilité": lambda x: "{} K".format(x) if x != '' else '', "MàJ Coeff": "Il y a {} heures".format, "MàJ HDV": "Il y a {} heures".format}
+).set_properties(
+    **{'text-align': 'center', 'border-color': 'lightgray', 'border-width': '1px', 'border-style': 'solid'}
+).set_table_styles(
+    [{'selector': 'th', 'props': [('background-color', '#4B5D67'), ('color', 'white'), ('text-align', 'center')]}]
+)
 
 st.dataframe(df_styled, width=1000, height=600,
              hide_index=True, use_container_width=True)
@@ -122,13 +143,23 @@ st.dataframe(df_styled, width=1000, height=600,
 st.markdown("<h2 style='text-align: center; color: white;'>Prix</h2>",
             unsafe_allow_html=True)
 
-
-# df1['total_profit_non_focus'].fillna(0).astype(int)
 df1['total_profit_non_focus'] = df1['total_profit_non_focus'].fillna(
     0).astype(int)
 df1['focus_rentabilite'] = df1['focus_rentabilite'].fillna(
     0).astype(int)
 
+df1.rename(columns=column_translations, inplace=True)
 
-st.dataframe(df1, width=1000, height=600,
-             hide_index=True, use_container_width=True)
+df1_styled = df1.style.apply(
+    lambda x: ['background-color: black']*len(x), axis=1
+).applymap(
+    lambda x: 'text-align: center;'
+).format(
+    {"Prix": lambda x: "{} K".format(x) if x != '' else '', "Prix de Craft": lambda x: "{} K".format(x) if x != '' else '', "Rentabilité Focus": lambda x: "{} K".format(x) if x != '' else '', "Profit Total": lambda x: "{} K".format(x) if x != '' else ''}
+).set_properties(
+    **{'text-align': 'center', 'border-color': 'lightgray', 'border-width': '1px', 'border-style': 'solid'}
+).set_table_styles(
+    [{'selector': 'th', 'props': [('background-color', '#4B5D67'), ('color', 'white'), ('text-align', 'center')]}]
+)
+
+st.dataframe(df1_styled, width=1000, height=600, hide_index=True, use_container_width=True)
