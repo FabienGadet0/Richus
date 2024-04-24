@@ -14,16 +14,18 @@ def get_data(file_name,dl=False):
     else:
         # Fetch all data if file does not exist and save to CSV
         df = fetch_all_data(file_name)
-        df.to_csv(file_name, index=False)
+        df.to_csv(f"streamlit/data/{file_name}.csv", index=False)
         return df
 
 
 first_load = 'first_load' not in st.session_state
 if 'first_load' not in st.session_state:
     st.session_state['first_load'] = True
+    first_load = False
 
 df = get_data("gold_price_brisage",dl=first_load)
 df_history = get_data("bronze_brisage_coeff_history",dl=first_load)
+df_runes = get_data("gold_item_rune_price",dl=first_load)
 
 df1 = df.copy()
 df = df[['item_id', 'objet_type', 'objet_level', 'nom_objet', 'meilleur_renta',
@@ -70,7 +72,7 @@ if type_filter:
     df = df[df['objet_type'].isin(type_filter)]
 
 update_filter_options = {'Tout': None,'Moins d\'un jour': 24, 'Moins d\'une semaine': 168, 'Moins d\'un mois': 720}
-update_filter_choice = st.sidebar.selectbox("Derniere update de la rune", options=list(update_filter_options.keys()), key='update_filter')
+update_filter_choice = st.sidebar.selectbox("Derniere MAJ des coeffs de rune", options=list(update_filter_options.keys()), key='update_filter')
 
 if update_filter_options[update_filter_choice]:
     df = df[df['coeff_derniere_update'] <=
@@ -99,6 +101,19 @@ def highlight_coefficient_above_average(s, avg):
 avg_coefficient = df['coefficient'].astype(float).mean()
 
 
+# if not item_id_filter and not name_filter and not type_filter and update_filter_choice == 'Tout' and not rentable_filter and not coefficient_filter:
+
+if item_id_filter or name_filter:
+    if item_id_filter:
+        df_runes = df_runes[df_runes['item_id'].isin(item_id_filter)]
+    if name_filter:
+        filtered_ids = df[df['nom_objet'].isin(name_filter)]['item_id'].unique()
+        df_runes = df_runes[df_runes['item_id'].isin(filtered_ids)]
+else:
+    df_runes = pd.DataFrame(columns=df_runes.columns)  # If no filter is applied, show an empty dataframe
+    df1 = pd.DataFrame(columns=df_runes.columns)  # If no filter is applied, show an empty dataframe
+    df = df.head(100)
+
 column_translations = {
     "item_id": "ID",
     "objet_type": "Type",
@@ -119,7 +134,7 @@ column_translations = {
 df.rename(columns=column_translations, inplace=True)
 df_styled = df.style.apply(
     lambda x: ['background-color: black']*len(x), axis=1
-).applymap(
+).map(
     lambda x: 'text-align: center;'
 ).apply(
     highlight_update, subset=["MàJ Coeff"]
@@ -137,30 +152,52 @@ df_styled = df.style.apply(
     [{'selector': 'th', 'props': [('background-color', '#4B5D67'), ('color', 'white'), ('text-align', 'center')]}]
 )
 
-
-st.dataframe(df_styled, width=1000, height=600,
-             hide_index=True, use_container_width=True)
-
-    # st.markdown("<h2 style='text-align: center; color: white;'>Prix</h2>",
-            # unsafe_allow_html=True)
-
-df1['total_profit_non_focus'] = df1['total_profit_non_focus'].fillna(
-    0).astype(int)
-df1['focus_rentabilite'] = df1['focus_rentabilite'].fillna(
-    0).astype(int)
-
 df1.rename(columns=column_translations, inplace=True)
-
 df1_styled = df1.style.apply(
     lambda x: ['background-color: black']*len(x), axis=1
 ).map(
     lambda x: 'text-align: center;'
 ).format(
-    {"Prix": lambda x: "{} K".format(x) if x != '' else '', "Prix de Craft": lambda x: "{} K".format(x) if x != '' else '', "Rentabilité Focus": lambda x: "{} K".format(x) if x != '' else '', "Profit Total": lambda x: "{} K".format(x) if x != '' else ''}
+    {"Prix": lambda x: "{} K".format(x) if x != '' else '', "Prix de Craft": lambda x: "{} K".format(x) if x != '' else '', "Rentabilité Focus": lambda x: "{} K".format(round(x, 1)) if x != '' else '', "Profit Total": lambda x: "{} K".format(x) if x != '' else ''}
 ).set_properties(
     **{'text-align': 'center', 'border-color': 'lightgray', 'border-width': '1px', 'border-style': 'solid'}
 ).set_table_styles(
     [{'selector': 'th', 'props': [('background-color', '#4B5D67'), ('color', 'white'), ('text-align', 'center')]}]
 )
 
+
+st.dataframe(df_styled, width=1000, height=600, use_container_width=True)
+
+st.markdown("<h2 style='text-align: center; color: white;'>Prix details </h2>",
+            unsafe_allow_html=True)
+
 st.dataframe(df1_styled, width=1000, height=600, hide_index=True, use_container_width=True)
+
+st.markdown("<h2 style='text-align: center; color: white;'>Runes details</h2>", unsafe_allow_html=True)
+df_runes = df_runes[['item_id', 'name', 'rune_weight', 'jet', 'runes_qty', 'focus_runes_qty', 'profitability', 'focus_profitability']]
+
+
+column_translations_runes = {
+    "item_id": "ID",
+    "name": "Nom",
+    "rune_weight": "Poids Rune",
+    "jet": "Jet",
+    "runes_qty": "Qté Runes",
+    "focus_runes_qty": "Qté Runes Focus",
+    "profitability": "Rentabilité",
+    "focus_profitability": "Rentabilité Focus"
+}
+
+df_runes.rename(columns=column_translations_runes, inplace=True)
+df_runes_styled = df_runes.style.apply(
+    lambda x: ['background-color: black']*len(x), axis=1
+).map(
+    lambda x: 'text-align: center;'
+).format(
+    {"Qté Runes": "{:,.0f}", "Qté Runes Focus": "{:,.0f}", "Rentabilité": lambda x: "{} K".format(round(x, 1)) if x != '' else '', "Rentabilité Focus": lambda x: "{} K".format(round(x, 1)) if x != '' else '', "Poids Rune": "{:,.0f}"}
+).set_properties(
+    **{'text-align': 'center', 'border-color': 'lightgray', 'border-width': '1px', 'border-style': 'solid'}
+).set_table_styles(
+    [{'selector': 'th', 'props': [('background-color', '#4B5D67'), ('color', 'white'), ('text-align', 'center')]}]
+)
+st.dataframe(df_runes_styled, width=1000, height=600, hide_index=True, use_container_width=True)
