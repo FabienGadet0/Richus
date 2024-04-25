@@ -25,6 +25,8 @@ dagster-webserver = "^1.7.1"
 psycopg2-binary = "^2.9.9"
 pytz = "^2024.1"
 streamlit = "^1.33.0"
+dagster-postgres = "^0.23.2"
+dagster-aws = "^0.23.2"
 
 
 [build-system]

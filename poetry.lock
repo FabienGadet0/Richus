@@ -260,6 +260,44 @@ files = [
 ]
 
 [[package]]
+name = "boto3"
+version = "1.34.91"
+description = "The AWS SDK for Python"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "boto3-1.34.91-py3-none-any.whl", hash = "sha256:97fac686c47647db4b44e4789317e4aeecd38511d71e84f8d20abe33eb630ff1"},
+    {file = "boto3-1.34.91.tar.gz", hash = "sha256:5077917041adaaae15eeca340289547ef905ca7e11516e9bd22d394fb5057d2a"},
+]
+
+[package.dependencies]
+botocore = ">=1.34.91,<1.35.0"
+jmespath = ">=0.7.1,<2.0.0"
+s3transfer = ">=0.10.0,<0.11.0"
+
+[package.extras]
+crt = ["botocore[crt] (>=1.21.0,<2.0a0)"]
+
+[[package]]
+name = "botocore"
+version = "1.34.91"
+description = "Low-level, data-driven core of boto 3."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "botocore-1.34.91-py3-none-any.whl", hash = "sha256:4d1b13f2b1c28ce1743b1e5895ae62bb7e67f892b51882164ea19c27a130852b"},
+    {file = "botocore-1.34.91.tar.gz", hash = "sha256:93ef7071292a1b2b9fc26537f8ae3a8227da1177969241939ea3fbdb1a1a1d0c"},
+]
+
+[package.dependencies]
+jmespath = ">=0.7.1,<2.0.0"
+python-dateutil = ">=2.1,<3.0.0"
+urllib3 = {version = ">=1.25.4,<2.2.0 || >2.2.0,<3", markers = "python_version >= \"3.10\""}
+
+[package.extras]
+crt = ["awscrt (==0.20.9)"]
+
+[[package]]
 name = "bs4"
 version = "0.0.2"
 description = "Dummy package for Beautiful Soup (beautifulsoup4)"
@@ -517,13 +555,13 @@ pytz = ">2021.1"
 
 [[package]]
 name = "dagster"
-version = "1.7.1"
+version = "1.7.2"
 description = "Dagster is an orchestration platform for the development, production, and observation of data assets."
 optional = false
 python-versions = "<3.13,>=3.8"
 files = [
-    {file = "dagster-1.7.1-py3-none-any.whl", hash = "sha256:fa69b137f0db14279bca0c7831a352032148dd44a68c7de5004c59206a08f73d"},
-    {file = "dagster-1.7.1.tar.gz", hash = "sha256:f5a947f582f93c1d85b4ce6d80c6365d9d97a248e54fb6822fc3b785e5d0e820"},
+    {file = "dagster-1.7.2-py3-none-any.whl", hash = "sha256:14e58f9ff4aefc16957cff1ce9db2de936038f9ce96980acb243db60cbc8ba64"},
+    {file = "dagster-1.7.2.tar.gz", hash = "sha256:f9ff01529cb8f7685b147c0adc4726568417afb59fc2e39c550ccf0d1c10b8f6"},
 ]
 
 [package.dependencies]
@@ -531,7 +569,7 @@ alembic = ">=1.2.1,<1.6.3 || >1.6.3,<1.7.0 || >1.7.0,<1.11.0 || >1.11.0"
 click = ">=5.0"
 coloredlogs = ">=6.1,<=14.0"
 croniter = ">=0.3.34"
-dagster-pipes = "1.7.1"
+dagster-pipes = "1.7.2"
 docstring-parser = "*"
 grpcio = ">=1.44.0"
 grpcio-health-checking = ">=1.44.0"
@@ -573,18 +611,40 @@ ruff = ["ruff (==0.3.4)"]
 test = ["buildkite-test-collector", "docker", "grpcio-tools (>=1.44.0)", "mock (==3.0.5)", "morefs[asynclocal]", "mypy-protobuf", "objgraph", "pytest (>=7.0.1)", "pytest-cov (==2.10.1)", "pytest-mock (==3.3.1)", "pytest-rerunfailures (==10.0)", "pytest-xdist (==3.5.0)", "rapidfuzz", "responses (<=0.23.1)", "syrupy (>=4.0.0)", "tox (==3.25.0)"]
 
 [[package]]
+name = "dagster-aws"
+version = "0.23.2"
+description = "Package for AWS-specific Dagster framework solid and resource components."
+optional = false
+python-versions = "<3.13,>=3.8"
+files = [
+    {file = "dagster-aws-0.23.2.tar.gz", hash = "sha256:88117e00e81a229fd233ae49b6813e350f6147a0bf154b0b72b26a16d2b52a3c"},
+    {file = "dagster_aws-0.23.2-py3-none-any.whl", hash = "sha256:25c078d0ac43d28d939078905e71b3585cd7219351baf71e8b0e5ad5073544d2"},
+]
+
+[package.dependencies]
+boto3 = "*"
+dagster = "1.7.2"
+packaging = "*"
+requests = "*"
+
+[package.extras]
+pyspark = ["dagster-pyspark"]
+redshift = ["psycopg2-binary"]
+test = ["botocore (!=1.32.1)", "moto[s3,server] (>=2.2.8,<5.0)", "requests-mock", "xmltodict (==0.12.0)"]
+
+[[package]]
 name = "dagster-graphql"
-version = "1.7.1"
+version = "1.7.2"
 description = "The GraphQL frontend to python dagster."
 optional = false
 python-versions = "<3.13,>=3.8"
 files = [
-    {file = "dagster-graphql-1.7.1.tar.gz", hash = "sha256:6227904a0fac4affdb70d2d662a6560847a91261a385a082405b4b6264f6a7bb"},
-    {file = "dagster_graphql-1.7.1-py3-none-any.whl", hash = "sha256:96f805d4570c457de930d4aa5e3e268f4d222a3768d89517726389ad020d8799"},
+    {file = "dagster-graphql-1.7.2.tar.gz", hash = "sha256:174fc39f9dcd75354fe89d93eefca5d6864cd1a0342e52fad0ec041209f6bdcd"},
+    {file = "dagster_graphql-1.7.2-py3-none-any.whl", hash = "sha256:f431a9f6b7f3c6543c0eb45b3ee3e65a2f046a4e5c68965b7a6133d4bc215fef"},
 ]
 
 [package.dependencies]
-dagster = "1.7.1"
+dagster = "1.7.2"
 gql = {version = ">=3,<4", extras = ["requests"]}
 graphene = ">=3,<4"
 requests = "*"
@@ -592,30 +652,45 @@ starlette = "*"
 
 [[package]]
 name = "dagster-pipes"
-version = "1.7.1"
+version = "1.7.2"
 description = "Toolkit for Dagster integrations with transform logic outside of Dagster"
 optional = false
 python-versions = "<3.13,>=3.8"
 files = [
-    {file = "dagster-pipes-1.7.1.tar.gz", hash = "sha256:a113d3e0a4fc979a2147bb51f944f175f634befa028fe45d78e9b5fb076fcaea"},
-    {file = "dagster_pipes-1.7.1-py3-none-any.whl", hash = "sha256:03ae08517bfdad4ba3d4875720f215cc76f429ae8242e611ca0b8b3c25cd69a5"},
+    {file = "dagster-pipes-1.7.2.tar.gz", hash = "sha256:31fc3b833419389f4eeca85e91a0f27dec454cd822a4ffd6eb9cd3cf0e808e3b"},
+    {file = "dagster_pipes-1.7.2-py3-none-any.whl", hash = "sha256:6393a21bcd61e602d3839dfbf9a7666b5928155d44168f87874f30d0733ac181"},
 ]
 
 [[package]]
+name = "dagster-postgres"
+version = "0.23.2"
+description = "A Dagster integration for postgres"
+optional = false
+python-versions = "<3.13,>=3.8"
+files = [
+    {file = "dagster-postgres-0.23.2.tar.gz", hash = "sha256:a4aff1a0d21a5555a8dc72be9becbacef3df3f58b69f5d7027d3f7aba75953ba"},
+    {file = "dagster_postgres-0.23.2-py3-none-any.whl", hash = "sha256:d9fde56c02ecedcfcd8bf5fbde95ded03bd69b71789ef240b0254a2a50120960"},
+]
+
+[package.dependencies]
+dagster = "1.7.2"
+psycopg2-binary = "*"
+
+[[package]]
 name = "dagster-webserver"
-version = "1.7.1"
+version = "1.7.2"
 description = "Web UI for dagster."
 optional = false
 python-versions = "<3.13,>=3.8"
 files = [
-    {file = "dagster-webserver-1.7.1.tar.gz", hash = "sha256:03bbab1ba8ce0750bb3784fb6e3eed00cbd8dae3dc70ef1cc5490c83abd197a7"},
-    {file = "dagster_webserver-1.7.1-py3-none-any.whl", hash = "sha256:2d9eda1ff26c97efd71753582ef75e6b93f9bc45a6e0a5e5ea8036e0f5f0b694"},
+    {file = "dagster-webserver-1.7.2.tar.gz", hash = "sha256:c04ea9cebf72990e89a4f8f48f8c651c993fd940e539fb9d194a4bc2cbaefe17"},
+    {file = "dagster_webserver-1.7.2-py3-none-any.whl", hash = "sha256:cf5442818a6c1729d2289d58a33ebcb6d598fc700c8044ecd466ae20871ce1d0"},
 ]
 
 [package.dependencies]
 click = ">=7.0,<9.0"
-dagster = "1.7.1"
-dagster-graphql = "1.7.1"
+dagster = "1.7.2"
+dagster-graphql = "1.7.2"
 starlette = "!=0.36.0"
 uvicorn = {version = "*", extras = ["standard"]}
 
@@ -1146,6 +1221,17 @@ MarkupSafe = ">=2.0"
 
 [package.extras]
 i18n = ["Babel (>=2.7)"]
+
+[[package]]
+name = "jmespath"
+version = "1.0.1"
+description = "JSON Matching Expressions"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "jmespath-1.0.1-py3-none-any.whl", hash = "sha256:02e2e4cc71b5bcab88332eebf907519190dd9e6e82107fa7f83b1003a6252980"},
+    {file = "jmespath-1.0.1.tar.gz", hash = "sha256:90261b206d6defd58fdd5e85f478bf633a2901798906be2ad389150c5c60edbe"},
+]
 
 [[package]]
 name = "jsonschema"
@@ -2608,6 +2694,23 @@ files = [
 ]
 
 [[package]]
+name = "s3transfer"
+version = "0.10.1"
+description = "An Amazon S3 Transfer Manager"
+optional = false
+python-versions = ">= 3.8"
+files = [
+    {file = "s3transfer-0.10.1-py3-none-any.whl", hash = "sha256:ceb252b11bcf87080fb7850a224fb6e05c8a776bab8f2b64b7f25b969464839d"},
+    {file = "s3transfer-0.10.1.tar.gz", hash = "sha256:5683916b4c724f799e600f41dd9e10a9ff19871bf87623cc8f491cb4f5fa0a19"},
+]
+
+[package.dependencies]
+botocore = ">=1.33.2,<2.0a.0"
+
+[package.extras]
+crt = ["botocore[crt] (>=1.33.2,<2.0a.0)"]
+
+[[package]]
 name = "selenium"
 version = "4.19.0"
 description = ""
@@ -3513,4 +3616,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.11,<3.13"
-content-hash = "f0116b4692fbd1dd9e34d19ad3a816a5c28da1176cd354256c9231e4d9db754d"
+content-hash = "ddb0e7129e4f079c2d6d65658afbbb6c1ad09d80bdc3e8094095af5c3dc5004e"
