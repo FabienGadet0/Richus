@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-MAX_WORKER = 1
+MAX_WORKER = 3
 
 def create_connector(is_local : bool = os.environ.get("IS_LOCAL") == "True"):
     DATABASE_HOST_NAME = os.environ.get("DATABASE_HOST_NAME")
