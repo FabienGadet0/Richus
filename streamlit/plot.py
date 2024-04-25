@@ -132,7 +132,7 @@ else:
     df_runes = pd.DataFrame(columns=df_runes.columns)
     # If no filter is applied, show an empty dataframe
     df1 = pd.DataFrame(columns=df_runes.columns)
-    df = df.head(100)
+    df = df.head(400)
 
 column_translations = {
     "item_id": "ID",
