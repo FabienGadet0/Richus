@@ -18,10 +18,11 @@ def get_data(file_name,dl=False):
         return df
 
 
-first_load = 'first_load' not in st.session_state
-if 'first_load' not in st.session_state:
-    st.session_state['first_load'] = True
-    first_load = False
+first_load = True
+# first_load = 'first_load' not in st.session_state
+# if 'first_load' not in st.session_state:
+#     st.session_state['first_load'] = True
+#     first_load = False
 
 df = get_data("gold_price_brisage",dl=first_load)
 df_history = get_data("bronze_brisage_coeff_history",dl=first_load)
