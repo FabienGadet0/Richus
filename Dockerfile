@@ -16,7 +16,7 @@ RUN pip install poetry && \
     # poetry config virtualenvs.create false && \
     poetry install --no-interaction --no-ansi
 
-
+EXPOSE 3000
 # RUN rm -f .env
 
 ENTRYPOINT ["poetry", "run", "dagster-webserver", "-h", "0.0.0.0", "-p", "3000"]

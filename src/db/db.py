@@ -14,7 +14,7 @@ def create_connector(is_local : bool = os.environ.get("IS_LOCAL") == "True"):
     AUTH_TOKEN = os.environ.get("AUTH_TOKEN")
     # CONN_URL = DATABASE_HOST_NAME_LOCAL if is_local  else f"sqlite+libsql://{DATABASE_HOST_NAME}/?authToken={AUTH_TOKEN}&secure=true"
     # CONN_URL = f"postgresql+psycopg2://postgres:1@localhost:5432/postgres"
-    CONN_URL = os.environ.get("CONN_URL")
+    CONN_URL = os.environ.get("DATABASE_URL")
     return sa.create_engine(CONN_URL)
 
 
