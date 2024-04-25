@@ -6,7 +6,7 @@ import os
 
 st.set_page_config(layout="wide")
 
-def get_data(file_name,dl=False):
+def get_data(file_name,dl=True):
     # Define file path
     # Check if file exists
     if os.path.exists(f"streamlit/data/{file_name}.csv") and not dl:
@@ -18,15 +18,15 @@ def get_data(file_name,dl=False):
         return df
 
 
-first_load = True
+# first_load = True
 # first_load = 'first_load' not in st.session_state
 # if 'first_load' not in st.session_state:
 #     st.session_state['first_load'] = True
 #     first_load = False
 
-df = get_data("gold_price_brisage",dl=first_load)
-df_history = get_data("bronze_brisage_coeff_history",dl=first_load)
-df_runes = get_data("gold_item_rune_price",dl=first_load)
+df = get_data("gold_price_brisage")
+df_history = get_data("bronze_brisage_coeff_history")
+df_runes = get_data("gold_item_rune_price")
 
 df1 = df.copy()
 df = df[['item_id', 'objet_type', 'objet_level', 'nom_objet', 'meilleur_renta',
