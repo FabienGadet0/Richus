@@ -19,4 +19,5 @@ RUN pip install poetry && \
 EXPOSE 3000
 # RUN rm -f .env
 
-ENTRYPOINT ["poetry", "run", "dagster-webserver", "-h", "0.0.0.0", "-p", "3000"]
+# ENTRYPOINT ["poetry", "run", "dagster-webserver", "-h", "0.0.0.0", "-p", "3000"]
+ENTRYPOINT ["poetry", "run", "dagster", "dev","-h", "0.0.0.0", "-p", "3000"]
