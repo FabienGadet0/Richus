@@ -213,11 +213,11 @@ column_translations = {
     "hdv_derniere_update": "MàJ HDV",
     "prix": "Prix",
     "craft": "Prix de Craft",
-    "focus_rentabilite": "Rentabilité Focus",
-    "total_profit_non_focus": "Rentabilité Sans Focus",
+    "focus_rentabilite": "Prix de vente Focus",
+    "total_profit_non_focus": "Prix de vente non Focus",
     "craft_vs_focus_diff": "Rentabilité Craft -> Focus",
-    "craft_vs_prix_diff": "Rentabilité Achat Revente",
     "craft_vs_total_profit_non_focus_diff": "Rentabilité Craft -> Brisage Non Focus",
+    "craft_vs_prix_diff": "Rentabilité Craft -> Revente",
 }
 
 df.rename(columns=column_translations, inplace=True)
@@ -261,12 +261,14 @@ df1_styled = (
         {
             "Prix": lambda x: "{} K".format(x) if x != "" else "",
             "Prix de Craft": lambda x: "{} K".format(x) if x != "" else "",
-            "Rentabilité Focus": lambda x: (
+            "Prix de vente Focus": lambda x: (
                 "{} K".format(round(x, 1)) if x != "" else ""
             ),
-            "Rentabilité Sans Focus": lambda x: "{} K".format(x) if x != "" else "",
+            "Prix de vente non Focus": lambda x: "{} K".format(x) if x != "" else "",
             "Rentabilité Craft -> Focus": lambda x: "{} K".format(x) if x != "" else "",
-            "Rentabilité Achat Revente": lambda x: "{} K".format(x) if x != "" else "",
+            "Rentabilité Craft -> Revente": lambda x: (
+                "{} K".format(x) if x != "" else ""
+            ),
             "Rentabilité Craft -> Brisage Non Focus": lambda x: (
                 "{} K".format(x) if x != "" else ""
             ),
@@ -323,7 +325,7 @@ column_translations_runes = {
     "runes_qty": "Qté Runes",
     "focus_runes_qty": "Qté Runes Focus",
     "profitability": "Rentabilité",
-    "focus_profitability": "Rentabilité Focus",
+    "focus_profitability": "Prix de vente Focus",
 }
 
 df_runes.rename(columns=column_translations_runes, inplace=True)
@@ -337,7 +339,7 @@ df_runes_styled = (
             "Qté Runes": "{:,.1f}",
             "Qté Runes Focus": "{:,.1f}",
             "Rentabilité": lambda x: "{} K".format(round(x, 1)) if x != "" else "",
-            "Rentabilité Focus": lambda x: (
+            "Prix de vente Focus": lambda x: (
                 "{} K".format(round(x, 1)) if x != "" else ""
             ),
             "Poids Rune": "{:,.1f}",
