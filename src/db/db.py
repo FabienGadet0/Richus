@@ -8,7 +8,8 @@ load_dotenv()
 
 MAX_WORKER = 3
 
-def create_connector(is_local : bool = os.environ.get("IS_LOCAL") == "True"):
+
+def create_connector(is_local: bool = os.environ.get("IS_LOCAL") == "True"):
     DATABASE_HOST_NAME = os.environ.get("DATABASE_HOST_NAME")
     DATABASE_HOST_NAME_LOCAL = os.environ.get("DATABASE_HOST_NAME_LOCAL")
     AUTH_TOKEN = os.environ.get("AUTH_TOKEN")
@@ -38,7 +39,9 @@ def fetch_all_data_from_query(query_file, limit=3000):
             for _ in range(3):
                 future = executor.submit(fetch_data, offset, limit)
                 futures.append(future)
-                offset += limit  # Prepare the offset for the next potential set of fetches
+                offset += (
+                    limit  # Prepare the offset for the next potential set of fetches
+                )
 
             empty_dataframes = 0
             for future in futures:
@@ -63,7 +66,8 @@ def fetch_all_data_from_query(query_file, limit=3000):
         print(f"No data found for query in {query_file}")
         return pd.DataFrame()
 
-def fetch_all_data(table_name,limit=3000):
+
+def fetch_all_data(table_name, limit=3000):
 
     # Function to fetch data with given offset and limit
     def fetch_data(offset, limit):
@@ -106,6 +110,7 @@ def fetch_all_data(table_name,limit=3000):
         print(f"Table {table_name} is empty")
         return pd.DataFrame()
 
+
 def batch_insert_to_db(dataframe, table_name, date_columns=None):
     batch_size = 10000
     engine = create_connector()
@@ -116,7 +121,13 @@ def batch_insert_to_db(dataframe, table_name, date_columns=None):
         batch = dataframe.iloc[start_row:end_row]
         with engine.begin() as conn:  # Start a new transaction
             try:
-                batch.to_sql(table_name, conn, if_exists='append', index=False, dtype={col: sa.types.DateTime() for col in date_columns})
+                batch.to_sql(
+                    table_name,
+                    conn,
+                    if_exists="append",
+                    index=False,
+                    dtype={col: sa.types.DateTime() for col in date_columns},
+                )
             except Exception as e:
                 print(f"Failed to insert batch into {table_name}: {repr(e)}")
                 conn.close()
@@ -124,10 +135,11 @@ def batch_insert_to_db(dataframe, table_name, date_columns=None):
             finally:
                 print(f"Data inserted to {table_name} {batch.shape}")
 
+
 def execute_query_from_file(query_file):
     engine = create_connector()
     with open(query_file) as f:
-        queries = f.read().split(';')
+        queries = f.read().split(";")
     for query in queries:
         if query.strip():
             with engine.begin() as conn:  # Start a new transaction for each query
