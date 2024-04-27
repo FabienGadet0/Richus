@@ -51,14 +51,15 @@ df = df[
 df1 = df1[
     [
         "item_id",
+        "objet_level",
         "nom_objet",
         "prix",
         "craft",
         "focus_rentabilite",
         "total_profit_non_focus",
         "craft_vs_focus_diff",
-        "craft_vs_prix_diff",
         "craft_vs_total_profit_non_focus_diff",
+        "craft_vs_prix_diff",
     ]
 ]
 
@@ -96,6 +97,18 @@ st.markdown(
     unsafe_allow_html=True,
 )
 st.sidebar.markdown("## Filtres")
+
+if st.sidebar.button("Reset tout les filtres"):
+    st.session_state["item_id_select"] = []
+    st.session_state["nom_objet_filter"] = ""
+    st.session_state["type_objet_filter"] = []
+    st.session_state["meilleur_renta_filter"] = []
+    st.session_state["update_filter"] = "Tout"
+    st.session_state["level_objet_filter"] = (
+        int(df["objet_level"].min()),
+        int(df["objet_level"].max()),
+    )
+
 item_id_filter = st.sidebar.multiselect(
     "ID de l'objet",
     options=sorted(list(df["item_id"].unique())),
@@ -112,8 +125,8 @@ name_filter = st.sidebar.text_input(
 )
 
 if name_filter:
-    df = df[df["nom_objet"].str.contains(name_filter)]
-    df1 = df1[df1["nom_objet"].str.contains(name_filter)]
+    df = df[df["nom_objet"].str.contains(name_filter, case=False)]
+    df1 = df1[df1["nom_objet"].str.contains(name_filter, case=False)]
 
 type_filter = st.sidebar.multiselect(
     "Type de l'objet",
@@ -123,6 +136,7 @@ type_filter = st.sidebar.multiselect(
 )
 if type_filter:
     df = df[df["objet_type"].isin(type_filter)]
+    df1 = df1[df1["item_id"].isin(df["item_id"].unique())]
 
 meilleur_renta_filter = st.sidebar.multiselect(
     "Meilleur methode",
@@ -132,6 +146,7 @@ meilleur_renta_filter = st.sidebar.multiselect(
 )
 if meilleur_renta_filter:
     df = df[df["meilleur_renta"].isin(meilleur_renta_filter)]
+    df1 = df1[df1["item_id"].isin(df["item_id"].unique())]
 
 update_filter_options = {
     "Tout": None,
@@ -147,16 +162,49 @@ update_filter_choice = st.sidebar.selectbox(
 
 if update_filter_options[update_filter_choice]:
     df = df[df["coeff_derniere_update"] <= update_filter_options[update_filter_choice]]
+    df1 = df1[df1["item_id"].isin(df["item_id"].unique())]
+    level_filter = st.sidebar.slider(
+        "Niveau de l'objet",
+        min_value=int(df["Niveau"].min()),
+        max_value=int(df["Niveau"].max()),
+        value=(int(df["Niveau"].min()), int(df["Niveau"].max())),
+        key="level_objet_filter",
+    )
+
+
+level_filter = st.sidebar.slider(
+    "Niveau de l'objet",
+    min_value=int(df["objet_level"].min()),
+    max_value=int(df["objet_level"].max()),
+    value=(int(df["objet_level"].min()), int(df["objet_level"].max())),
+    key="level_objet_filter",
+    on_change=lambda: st.session_state.update({"level_objet_filter_applied": True}),
+)
+
+if (
+    "level_objet_filter_applied" in st.session_state
+    and st.session_state["level_objet_filter_applied"]
+):
+    df = df[
+        (df["objet_level"] >= level_filter[0]) & (df["objet_level"] <= level_filter[1])
+    ]
+    df1 = df1[
+        (df1["objet_level"] >= level_filter[0])
+        & (df1["objet_level"] <= level_filter[1])
+    ]
+    st.session_state["level_objet_filter_applied"] = False
 
 rentable_filter = st.sidebar.checkbox("Seulement rentable", key="rentable_filter")
 if rentable_filter:
     df = df[df["meilleur_renta"] != "non_rentable"]
+    df1 = df1[df1["item_id"].isin(df["item_id"].unique())]
 
 coefficient_filter = st.sidebar.checkbox(
     "Coefficient sous 1000", key="coefficient_filter"
 )
 if coefficient_filter:
     df = df[df["coefficient"].astype(float) < 1000]
+    df1 = df1[df1["item_id"].isin(df["item_id"].unique())]
 
 
 def highlight_renta_percent_high(s):
@@ -215,7 +263,7 @@ column_translations = {
     "craft": "Prix de Craft",
     "focus_rentabilite": "Prix de vente Focus",
     "total_profit_non_focus": "Prix de vente non Focus",
-    "craft_vs_focus_diff": "Rentabilité Craft -> Focus",
+    "craft_vs_focus_diff": "Rentabilité Craft -> Brisage Focus",
     "craft_vs_total_profit_non_focus_diff": "Rentabilité Craft -> Brisage Non Focus",
     "craft_vs_prix_diff": "Rentabilité Craft -> Revente",
 }
@@ -235,7 +283,7 @@ df_styled = (
         {
             "% Rentabilité": lambda x: "{:.0f} %".format(x) if x != "" else "",
             "Coeff": lambda x: "{:.0f} %".format(x) if x != "" else "",
-            "Valeur Rentabilité": lambda x: "{} K".format(x) if x != "" else "",
+            "Valeur Rentabilité": lambda x: "{:,.0f} K".format(x) if x != "" else "",
             "MàJ Coeff": "Il y a {} heures".format,
             "MàJ HDV": "Il y a {} heures".format,
         }
@@ -253,24 +301,60 @@ df_styled = (
     )
 )
 
+
+def highlight_above_average_or_negative(value, average):
+    if value < 0:
+        return "background-color: #ffcccc; color:black"
+    elif value > average:
+        return "background-color: gold; color:black"
+    else:
+        return ""
+
+
 df1.rename(columns=column_translations, inplace=True)
+
+average_craft_to_focus_diff = (
+    df1["Rentabilité Craft -> Brisage Focus"].astype(float).mean()
+)
+average_craft_to_non_focus_diff = (
+    df1["Rentabilité Craft -> Brisage Non Focus"].astype(float).mean()
+)
+average_craft_to_revente_diff = df1["Rentabilité Craft -> Revente"].astype(float).mean()
+
+
 df1_styled = (
     df1.style.apply(lambda x: ["background-color: black"] * len(x), axis=1)
     .map(lambda x: "text-align: center;")
+    .map(
+        lambda x: highlight_above_average_or_negative(x, average_craft_to_focus_diff),
+        subset=["Rentabilité Craft -> Brisage Focus"],
+    )
+    .map(
+        lambda x: highlight_above_average_or_negative(
+            x, average_craft_to_non_focus_diff
+        ),
+        subset=["Rentabilité Craft -> Brisage Non Focus"],
+    )
+    .map(
+        lambda x: highlight_above_average_or_negative(x, average_craft_to_revente_diff),
+        subset=["Rentabilité Craft -> Revente"],
+    )
     .format(
         {
-            "Prix": lambda x: "{} K".format(x) if x != "" else "",
-            "Prix de Craft": lambda x: "{} K".format(x) if x != "" else "",
-            "Prix de vente Focus": lambda x: (
-                "{} K".format(round(x, 1)) if x != "" else ""
+            "Prix": lambda x: "{:,.0f} K".format(x) if x != "" else "",
+            "Prix de Craft": lambda x: "{:,.0f} K".format(x) if x != "" else "",
+            "Prix de vente Focus": lambda x: ("{:,.1f} K".format(x) if x != "" else ""),
+            "Prix de vente non Focus": lambda x: (
+                "{:,.0f} K".format(x) if x != "" else ""
             ),
-            "Prix de vente non Focus": lambda x: "{} K".format(x) if x != "" else "",
-            "Rentabilité Craft -> Focus": lambda x: "{} K".format(x) if x != "" else "",
+            "Rentabilité Craft -> Brisage Focus": lambda x: (
+                "{:,.0f} K".format(x) if x != "" else ""
+            ),
             "Rentabilité Craft -> Revente": lambda x: (
-                "{} K".format(x) if x != "" else ""
+                "{:,.0f} K".format(x) if x != "" else ""
             ),
             "Rentabilité Craft -> Brisage Non Focus": lambda x: (
-                "{} K".format(x) if x != "" else ""
+                "{:,.0f} K".format(x) if x != "" else ""
             ),
         }
     )
@@ -330,18 +414,43 @@ column_translations_runes = {
 
 df_runes.rename(columns=column_translations_runes, inplace=True)
 
+average_rentabilite = df_runes["Rentabilité"].astype(float).mean()
+average_focus_profitability = df_runes["Prix de vente Focus"].astype(float).mean()
+
+
+def highlight_above_average_rentabilite(value, average):
+    if value == df_runes["Rentabilité"].astype(float).max():
+        return "background-color: gold; color:black"
+    else:
+        return ""
+
+
+def highlight_above_average_focus_profitability(value, average):
+    if value == df_runes["Prix de vente Focus"].astype(float).max():
+        return "background-color: gold; color:black"
+    else:
+        return ""
+
 
 df_runes_styled = (
     df_runes.style.apply(lambda x: ["background-color: black"] * len(x), axis=1)
     .map(lambda x: "text-align: center;")
+    .map(
+        lambda x: highlight_above_average_rentabilite(x, average_rentabilite),
+        subset=["Rentabilité"],
+    )
+    .map(
+        lambda x: highlight_above_average_focus_profitability(
+            x, average_focus_profitability
+        ),
+        subset=["Prix de vente Focus"],
+    )
     .format(
         {
             "Qté Runes": "{:,.1f}",
             "Qté Runes Focus": "{:,.1f}",
-            "Rentabilité": lambda x: "{} K".format(round(x, 1)) if x != "" else "",
-            "Prix de vente Focus": lambda x: (
-                "{} K".format(round(x, 1)) if x != "" else ""
-            ),
+            "Rentabilité": lambda x: "{:,.1f} K".format(x) if x != "" else "",
+            "Prix de vente Focus": lambda x: "{:,.1f} K".format(x) if x != "" else "",
             "Poids Rune": "{:,.1f}",
         }
     )
