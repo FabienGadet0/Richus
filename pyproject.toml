@@ -10,7 +10,6 @@ packages = [{ include = "src" }]
 python = ">=3.11,<3.13"
 selenium = "^4.19.0"
 pip = "^24.0"
-undetected-chromedriver = "^3.5.5"
 selenium-stealth = "^1.0.6"
 pandas = "^2.2.1"
 bs4 = "^0.0.2"
@@ -27,6 +26,7 @@ pytz = "^2024.1"
 streamlit = "^1.33.0"
 dagster-postgres = "^0.23.2"
 dagster-aws = "^0.23.2"
+undetected-chromedriver = "^3.5.5"
 
 
 [build-system]

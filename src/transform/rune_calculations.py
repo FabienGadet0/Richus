@@ -25,6 +25,7 @@ def main():
             df_item_runes_filtered, df_items[["item_id", "level"]], on="item_id"
         )
         df_final.drop_duplicates(inplace=True)
+
         df_final = pd.merge(
             df_final,
             df_brisage_coeff[["item_id", "coefficient", "rune_last_update"]],
@@ -91,7 +92,7 @@ def main():
         df_final.drop_duplicates(inplace=True)
         for col in df_final.select_dtypes(include=["float"]).columns:
             df_final[col] = df_final[col].round(1)
-        batch_insert_to_db(df_final, "silver_runes_pdb_focus")
+        batch_insert_to_db(df_final, "silver_runes_pdb_focus", if_exists="replace")
     except Exception as e:
         print(f"Error during processing or inserting data: {e}")
         raise
