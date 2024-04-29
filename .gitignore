@@ -4,3 +4,4 @@ data/bronze/Items.json
 .env
 test.json
 tmp*
+streamlit/data
