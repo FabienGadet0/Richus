@@ -1,3 +1,4 @@
+from dagster._core.definitions.schedule_definition import DefaultScheduleStatus
 from src.generators.runOnce import (
     generate_item_ids_mapping as generate_item_ids_mapping_func,
     generate_runes as generate_runes_func,
@@ -82,7 +83,12 @@ selection = [
 
 main_job = define_asset_job(name="main", selection=selection)
 daily_job = define_asset_job("asset_job", AssetSelection.groups("daily_update"))
-daily_schedule = ScheduleDefinition(job=daily_job, cron_schedule="0 15 * * *")
+daily_schedule = ScheduleDefinition(
+    job=daily_job,
+    # cron_schedule="0 15 * * *",
+    cron_schedule="*/20 * * * *",
+    default_status=DefaultScheduleStatus.RUNNING,
+)
 
 defs = Definitions(
     schedules=[daily_schedule], assets=selection, jobs=[main_job, daily_job]
