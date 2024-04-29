@@ -92,7 +92,7 @@ def main():
         df_final.drop_duplicates(inplace=True)
         for col in df_final.select_dtypes(include=["float"]).columns:
             df_final[col] = df_final[col].round(1)
-        batch_insert_to_db(df_final, "silver_runes_pdb_focus", if_exists="replace")
+        batch_insert_to_db(df_final, "silver_runes_pdb_focus", if_exists="append")
     except Exception as e:
         print(f"Error during processing or inserting data: {e}")
         raise
