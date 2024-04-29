@@ -104,10 +104,11 @@ if st.sidebar.button("Reset tout les filtres"):
     st.session_state["type_objet_filter"] = []
     st.session_state["meilleur_renta_filter"] = []
     st.session_state["update_filter"] = "Tout"
-    st.session_state["level_objet_filter"] = (
-        int(df["objet_level"].min()),
-        int(df["objet_level"].max()),
-    )
+    if not df["objet_level"].empty:
+        st.session_state["level_objet_filter"] = (
+            int(df["objet_level"].min()),
+            int(df["objet_level"].max()),
+        )
 
 item_id_filter = st.sidebar.multiselect(
     "ID de l'objet",
@@ -171,28 +172,6 @@ if update_filter_options[update_filter_choice]:
         key="level_objet_filter",
     )
 
-
-level_filter = st.sidebar.slider(
-    "Niveau de l'objet",
-    min_value=int(df["objet_level"].min()),
-    max_value=int(df["objet_level"].max()),
-    value=(int(df["objet_level"].min()), int(df["objet_level"].max())),
-    key="level_objet_filter",
-    on_change=lambda: st.session_state.update({"level_objet_filter_applied": True}),
-)
-
-if (
-    "level_objet_filter_applied" in st.session_state
-    and st.session_state["level_objet_filter_applied"]
-):
-    df = df[
-        (df["objet_level"] >= level_filter[0]) & (df["objet_level"] <= level_filter[1])
-    ]
-    df1 = df1[
-        (df1["objet_level"] >= level_filter[0])
-        & (df1["objet_level"] <= level_filter[1])
-    ]
-    st.session_state["level_objet_filter_applied"] = False
 
 rentable_filter = st.sidebar.checkbox("Seulement rentable", key="rentable_filter")
 if rentable_filter:
