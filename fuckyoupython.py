@@ -86,7 +86,7 @@ daily_job = define_asset_job("asset_job", AssetSelection.groups("daily_update"))
 daily_schedule = ScheduleDefinition(
     job=daily_job,
     # cron_schedule="0 15 * * *",
-    cron_schedule="*/20 * * * *",
+    cron_schedule="0 * * * *",
     default_status=DefaultScheduleStatus.RUNNING,
 )
 
